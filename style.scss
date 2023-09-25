@@ -1,0 +1,43 @@
+@use "reset";
+@use "fonts";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.row {
+    display: flex;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1440px;
+    padding: 0 82px;
+    background-color: #121617;
+}
+
+// ------- Desktop -------
+
+// --- disable hover on touch devices ---
+
+@media (hover: hover) {
+}
+
+// ------- Laptop -------
+
+@media (max-width: 1200px) {
+}
+
+// -------  Tablet -------
+
+@media (max-width: 992px) {
+}
+
+// ------- Mobile -------
+
+@media (max-width: 576px) {
+}
