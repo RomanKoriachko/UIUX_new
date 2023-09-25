@@ -143,7 +143,8 @@ body {
 }
 .main .intro-section .intro-content-row .intro-btn {
   border-radius: 50px;
-  background: linear-gradient(297.99deg, #49be01 -14.48%, #99ff48 110.19%);
+  border: none;
+  background-image: linear-gradient(297.99deg, #49be01 -14.48%, #99ff48 110.19%);
   color: #121617;
   font-size: 24px;
   font-weight: 700;
@@ -205,9 +206,21 @@ body {
 
 @media (hover: hover) {
   .header .heaader-menu .header-menu-item {
-    transition: 0.3s all;
+    transition: 0.2s all;
   }
   .header .heaader-menu .header-menu-item:hover {
     color: #ffffff;
+  }
+  .header .registration-btn {
+    transition: 0.2s all;
+  }
+  .header .registration-btn:hover {
+    background-color: rgba(78, 189, 9, 0.2196078431);
+  }
+  .intro-section .intro-content-row .intro-btn {
+    transition: 0.2s all;
+  }
+  .intro-section .intro-content-row .intro-btn:hover {
+    box-shadow: 0 0 10px 0 #49be01 inset, 0 0 30px 5px #49be01;
   }
 }
