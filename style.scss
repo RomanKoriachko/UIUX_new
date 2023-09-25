@@ -335,6 +335,97 @@ body {
             cursor: pointer;
         }
     }
+    .benefit-section {
+        padding: 80px 0px;
+        background-color: #121617;
+        color: white;
+        .benefit-subtitle {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 24px;
+            letter-spacing: 0.15em;
+        }
+        .benefit-title {
+            font-size: 96px;
+            font-weight: 600;
+            line-height: 110px;
+            letter-spacing: -0.04em;
+            margin-top: 20px;
+            margin-bottom: 80px;
+            width: 70%;
+            > span {
+                color: #fa2702;
+            }
+        }
+        .benefit-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 16px;
+            .benefit-wrapper-item {
+                background-color: white;
+                color: #121617;
+                padding: 35px 30px 30px 30px;
+                .benefit-wrapper-item-circle-wrapper {
+                    width: max-content;
+                    position: relative;
+                    margin-bottom: 10px;
+                    .benefit-wrapper-item-circle {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50px;
+                        background-color: #fa2702;
+                    }
+                    .benefit-wrapper-item-plus {
+                        position: absolute;
+                        bottom: -5px;
+                        right: -5px;
+                        width: 24px;
+                        height: 24px;
+                        background-image: url(images/plus.svg);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+                }
+                .benefit-wrapper-item-title {
+                    font-size: 30px;
+                    font-weight: 600;
+                    line-height: 42px;
+                    letter-spacing: -0.04em;
+                    margin-bottom: 20px;
+                }
+                .benefit-wrapper-item-subtitle {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 26px;
+                    letter-spacing: -0.04em;
+                    width: 65%;
+                }
+            }
+            .benefit-wrapper-item:nth-child(2) {
+                position: relative;
+                background-color: #121617;
+                color: white;
+                .benefit-wrapper-item-circle-wrapper {
+                    .benefit-wrapper-item-plus {
+                        background-image: url(images/plus-white.svg);
+                    }
+                }
+                .benefit-wrapper-item-circle-fixed {
+                    position: absolute;
+                    bottom: -40px;
+                    right: 20px;
+                    width: 102px;
+                    height: 102px;
+                    background-color: #fa2702;
+                    border-radius: 50%;
+                    background-image: url(images/arrow-up-left.svg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
 }
 
 // --- disable hover on touch devices ---
