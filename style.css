@@ -464,6 +464,46 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+.main .example-section {
+  background-color: #121617;
+  color: white;
+}
+.main .example-section .example-title {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 83px;
+  letter-spacing: -0.04em;
+  padding-bottom: 40px;
+}
+.main .example-section .example-title > span {
+  color: #4ebd09;
+}
+.main .example-section .example-section-slider .slider-item {
+  margin: 0px 30px;
+}
+.main .example-section .example-section-slider .slider-item > img {
+  width: 100vh;
+}
+.main .example-section .example-section-slider .slick-prev:before,
+.main .example-section .example-section-slider .slick-next:before {
+  content: "";
+}
+.main .example-section .example-section-slider .slick-prev,
+.main .example-section .example-section-slider .slick-next {
+  height: 60px;
+  width: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main .example-section .example-section-slider .slick-prev {
+  left: 50px;
+  z-index: 10;
+  background-image: url(images/arrow-left.svg);
+}
+.main .example-section .example-section-slider .slick-next {
+  right: 50px;
+  background-image: url(images/arrow-right.svg);
+}
 
 @media (hover: hover) {
   .header .heaader-menu .header-menu-item {

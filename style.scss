@@ -426,6 +426,50 @@ body {
             }
         }
     }
+    .example-section {
+        background-color: #121617;
+        color: white;
+        .example-title {
+            font-size: 64px;
+            font-weight: 600;
+            line-height: 83px;
+            letter-spacing: -0.04em;
+            padding-bottom: 40px;
+            > span {
+                color: #4ebd09;
+            }
+        }
+        .example-section-slider {
+            .slider-item {
+                // max-width: 1440px;
+                margin: 0px 30px;
+                // margin: 0 auto;
+                > img {
+                    width: 100vh;
+                }
+            }
+            .slick-prev:before,
+            .slick-next:before {
+                content: "";
+            }
+            .slick-prev,
+            .slick-next {
+                height: 60px;
+                width: 60px;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .slick-prev {
+                left: 50px;
+                z-index: 10;
+                background-image: url(images/arrow-left.svg);
+            }
+            .slick-next {
+                right: 50px;
+                background-image: url(images/arrow-right.svg);
+            }
+        }
+    }
 }
 
 // --- disable hover on touch devices ---
