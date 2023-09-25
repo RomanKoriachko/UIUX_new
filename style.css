@@ -165,7 +165,7 @@ body {
   color: #ffffff;
 }
 .main .about-section {
-  padding: 80px 0px;
+  padding-top: 80px;
   color: #121617;
 }
 .main .about-section .about-title {
@@ -197,11 +197,51 @@ body {
   letter-spacing: 0em;
 }
 .main .about-section .about-img {
+  margin-top: 80px;
   background-image: url(images/about-section-img.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 270px;
+}
+.main .suitable-section {
+  padding-top: 100px;
+  padding-bottom: 60px;
+  background-color: #2c2c2c;
+  color: #989898;
+}
+.main .suitable-section .suitable-title {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 83px;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  width: 60%;
+  margin-bottom: 60px;
+}
+.main .suitable-section .suitable-title > span {
+  color: #4ebd09;
+}
+.main .suitable-section .suitable-wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+.main .suitable-section .suitable-wrapper .suitable-subtitle {
+  color: #fa2702;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.15em;
+}
+.main .suitable-section .suitable-wrapper .suitable-text {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0em;
+  margin: 20px 0px 40px 200px;
+}
+.main .suitable-section .suitable-wrapper .suitable-text:last-child {
+  margin-bottom: 0;
 }
 
 @media (hover: hover) {
