@@ -163,6 +163,45 @@ body {
 .main .intro-section .intro-content-row .intro-content-item > span {
   color: #ffffff;
 }
+.main .about-section {
+  padding: 80px 0px;
+  color: #121617;
+}
+.main .about-section .about-title {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 83px;
+  letter-spacing: -0.04em;
+  margin-bottom: 80px;
+}
+.main .about-section .about-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px 50px;
+}
+.main .about-section .about-wrapper .about-wrapper-item {
+  font-weight: 600;
+}
+.main .about-section .about-wrapper .about-wrapper-item > span {
+  color: #4ebd09;
+}
+.main .about-section .about-wrapper .about-item-left {
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.15em;
+}
+.main .about-section .about-wrapper .about-item-right {
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0em;
+}
+.main .about-section .about-img {
+  background-image: url(images/about-section-img.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 270px;
+}
 
 @media (hover: hover) {
   .header .heaader-menu .header-menu-item {

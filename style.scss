@@ -124,6 +124,45 @@ body {
             }
         }
     }
+    .about-section {
+        padding: 80px 0px;
+        color: #121617;
+        .about-title {
+            font-size: 64px;
+            font-weight: 600;
+            line-height: 83px;
+            letter-spacing: -0.04em;
+            margin-bottom: 80px;
+        }
+        .about-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px 50px;
+            .about-wrapper-item {
+                font-weight: 600;
+                > span {
+                    color: #4ebd09;
+                }
+            }
+            .about-item-left {
+                font-size: 24px;
+                line-height: 36px;
+                letter-spacing: 0.15em;
+            }
+            .about-item-right {
+                font-size: 20px;
+                line-height: 32px;
+                letter-spacing: 0em;
+            }
+        }
+        .about-img {
+            background-image: url(images/about-section-img.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 270px;
+        }
+    }
 }
 
 // --- disable hover on touch devices ---
