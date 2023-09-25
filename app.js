@@ -1,3 +1,5 @@
+// ---- Sliders -----
+
 $(document).ready(function () {
     $(".example-section-slider").slick({
         dots: false,
@@ -14,5 +16,15 @@ $(document).ready(function () {
                 },
             },
         ],
+    });
+});
+
+$(document).ready(function () {
+    $(".companies-slider").slick({
+        dots: false,
+        arrows: false,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        variableWidth: true,
     });
 });
