@@ -504,6 +504,94 @@ body {
   right: 50px;
   background-image: url(images/arrow-right.svg);
 }
+.main .numbers-section {
+  padding-top: 135px;
+  padding-bottom: 70px;
+}
+.main .numbers-section .numbers-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.main .numbers-section .numbers-wrapper .numbers-wrapper-text {
+  padding-left: 100px;
+}
+.main .numbers-section .numbers-wrapper .numbers-wrapper-text .numbers-wrapper-text-title {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 83px;
+  letter-spacing: -0.04em;
+  width: 75%;
+}
+.main .numbers-section .numbers-wrapper .numbers-wrapper-text .numbers-wrapper-text-title .color-green {
+  color: #4ebd09;
+}
+.main .numbers-section .numbers-wrapper .numbers-wrapper-text .numbers-wrapper-text-title .color-red {
+  color: #fa2702;
+}
+.main .numbers-section .numbers-wrapper .numbers-wrapper-text .numbers-wrapper-text-subtitle {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0em;
+  color: #989898;
+  padding: 40px 0px;
+  width: 60%;
+}
+.main .numbers-section .numbers-wrapper .numbers-wrapper-text .numbers-wrapper-text-btn {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  padding: 18px 58px;
+  color: white;
+  background-color: #121617;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.main .numbers-section .numbers-wrapper .numbers-wrapper-text .numbers-wrapper-text-btn .numbers-wrapper-text-btn-row {
+  align-items: center;
+  gap: 10px;
+}
+.main .numbers-section .numbers-wrapper .numbers-wrapper-text .numbers-wrapper-text-btn .numbers-wrapper-text-btn-row .red-circle {
+  width: 20px;
+  height: 20px;
+  background-color: #fa2702;
+  border-radius: 50px;
+}
+.main .numbers-section .numbers-wrapper .numbers-wrapper-indicators .numbers-wrapper-indicators-item {
+  padding: 50px 53px;
+  background-color: #121617;
+  color: white;
+  margin-bottom: 20px;
+}
+.main .numbers-section .numbers-wrapper .numbers-wrapper-indicators .numbers-wrapper-indicators-item .numbers-wrapper-indicators-item-row {
+  align-items: center;
+  gap: 40px;
+}
+.main .numbers-section .numbers-wrapper .numbers-wrapper-indicators .numbers-wrapper-indicators-item .numbers-wrapper-indicators-item-row .bold-text {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: -0.04em;
+  margin-bottom: 10px;
+}
+.main .numbers-section .numbers-wrapper .numbers-wrapper-indicators .numbers-wrapper-indicators-item .numbers-wrapper-indicators-item-row .regular-text {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0em;
+}
+.main .numbers-section .numbers-wrapper .numbers-wrapper-indicators .numbers-wrapper-indicators-item .numbers-wrapper-indicators-item-circle {
+  min-width: 40px;
+  min-height: 40px;
+  background-color: #fa2702;
+  border-radius: 50px;
+  background-image: url(images/arrow-up-left.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  transform: rotate(180deg);
+}
 
 @media (hover: hover) {
   .header .heaader-menu .header-menu-item {
@@ -535,5 +623,11 @@ body {
   }
   .main .plan-section .plan-btn:hover {
     box-shadow: 0 0 10px 0 #49be01 inset, 0 0 20px 3px #49be01;
+  }
+  .main .numbers-section .numbers-wrapper .numbers-wrapper-text .numbers-wrapper-text-btn:hover .red-circle {
+    background-color: #4ebd09;
+  }
+  .main .numbers-section .numbers-wrapper .numbers-wrapper-text .numbers-wrapper-text-btn .numbers-wrapper-text-btn-row .red-circle {
+    transition: 0.2s all;
   }
 }
