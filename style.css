@@ -243,6 +243,78 @@ body {
 .main .suitable-section .suitable-wrapper .suitable-text:last-child {
   margin-bottom: 0;
 }
+.main .aspect-section {
+  padding: 40px 0px 60px 0px;
+  background-color: #121617;
+  color: #ffffff;
+}
+.main .aspect-section .aspect-subtitle {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.15em;
+}
+.main .aspect-section .aspect-title {
+  font-size: 96px;
+  font-weight: 600;
+  line-height: 110px;
+  letter-spacing: -0.04em;
+  margin: 20px 0px 70px 0px;
+}
+.main .aspect-section .aspect-title > span {
+  color: #fa2702;
+}
+.main .aspect-section .aspect-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 16px;
+}
+.main .aspect-section .aspect-wrapper .aspect-wrapper-item {
+  position: relative;
+  padding: 35px 30px 40px;
+  background-color: #ffffff;
+  color: #121617;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 42px;
+  letter-spacing: -0.04em;
+}
+.main .aspect-section .aspect-wrapper .aspect-wrapper-item .aspect-wrapper-item-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: #fa2702;
+  margin-bottom: 10px;
+}
+.main .aspect-section .aspect-wrapper .aspect-wrapper-item span {
+  color: #4ebd09;
+}
+.main .aspect-section .aspect-wrapper .aspect-wrapper-item .aspect-item-circle-fixed {
+  position: absolute;
+  bottom: -40px;
+  right: 40px;
+  width: 102px;
+  height: 102px;
+  background-color: #fa2702;
+  border-radius: 50px;
+  background-image: url(images/arrow-up-left.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+.main .aspect-section .aspect-wrapper .aspect-wrapper-item:nth-child(2) {
+  background-color: #121617;
+  color: white;
+}
+.main .aspect-section .aspect-wrapper .aspect-wrapper-item-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fa2702;
+  color: white;
+  cursor: pointer;
+}
 
 @media (hover: hover) {
   .header .heaader-menu .header-menu-item {
@@ -257,10 +329,16 @@ body {
   .header .registration-btn:hover {
     background-color: rgba(78, 189, 9, 0.2196078431);
   }
-  .intro-section .intro-content-row .intro-btn {
+  .main .intro-section .intro-content-row .intro-btn {
     transition: 0.2s all;
   }
-  .intro-section .intro-content-row .intro-btn:hover {
+  .main .intro-section .intro-content-row .intro-btn:hover {
     box-shadow: 0 0 10px 0 #49be01 inset, 0 0 30px 5px #49be01;
+  }
+  .main .aspect-section .aspect-wrapper .aspect-wrapper-item-btn .aspect-wrapper-item-text {
+    transition: 0.2s all;
+  }
+  .main .aspect-section .aspect-wrapper .aspect-wrapper-item-btn:hover .aspect-wrapper-item-text {
+    transform: scale(110%);
   }
 }
