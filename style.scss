@@ -1,5 +1,6 @@
 @use "reset";
-@use "fonts";
+
+// ------- Global params -------
 
 * {
     box-sizing: border-box;
@@ -17,14 +18,64 @@ body {
     margin: 0 auto;
     width: 1440px;
     padding: 0 82px;
-    background-color: #121617;
 }
 
 // ------- Desktop -------
 
+.header {
+    background-color: #121617;
+    color: #989898;
+    .header-row {
+        border-bottom: 2px solid #4ebd09;
+        padding: 25px 36px;
+        padding-bottom: 23px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .heaader-menu {
+        gap: 40px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0em;
+        .header-menu-item {
+            cursor: pointer;
+        }
+    }
+    .registration-btn {
+        color: #4ebd09;
+        background-color: transparent;
+        border-radius: 50px;
+        border: 1px solid #4ebd09;
+        padding: 12px 42px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        cursor: pointer;
+    }
+}
+
+.main {
+    .intro-section {
+        background-color: #121617;
+        padding: 30px;
+    }
+}
+
 // --- disable hover on touch devices ---
 
 @media (hover: hover) {
+    .header {
+        .heaader-menu {
+            .header-menu-item {
+                transition: 0.3s all;
+                &:hover {
+                    color: #ffffff;
+                    // font-weight: 700;
+                }
+            }
+        }
+    }
 }
 
 // ------- Laptop -------
