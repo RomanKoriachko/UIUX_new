@@ -16,7 +16,7 @@ body {
 
 .container {
     margin: 0 auto;
-    width: 1440px;
+    max-width: 1440px;
     padding: 0 82px;
 }
 
@@ -58,7 +58,71 @@ body {
 .main {
     .intro-section {
         background-color: #121617;
-        padding: 30px;
+        padding-top: 40px;
+        padding-bottom: 60px;
+        color: #ffffff;
+        .intro-subtitle {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 36px;
+            letter-spacing: 0em;
+            color: #4ebd09;
+        }
+        .intro-title {
+            font-size: 96px;
+            font-weight: 600;
+            line-height: 96px;
+            letter-spacing: -0.05em;
+            text-transform: uppercase;
+            padding: 24px 0px;
+            > span {
+                color: #fa2702;
+            }
+        }
+        .intro-text {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 44px;
+            letter-spacing: 0em;
+            margin-bottom: 40px;
+        }
+        .intro-section-img {
+            width: 100%;
+            > img {
+                width: 100%;
+            }
+        }
+        .intro-content-row {
+            margin-top: 40px;
+            align-items: center;
+            justify-content: space-between;
+            .intro-btn {
+                border-radius: 50px;
+                background: linear-gradient(
+                    297.99deg,
+                    #49be01 -14.48%,
+                    #99ff48 110.19%
+                );
+                color: #121617;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 36px;
+                letter-spacing: 0em;
+                padding: 22px 27px;
+                cursor: pointer;
+            }
+            .intro-content-item {
+                font-size: 20px;
+                font-weight: 900;
+                line-height: 30px;
+                letter-spacing: 0.15em;
+                color: #fa2702;
+                text-transform: uppercase;
+                > span {
+                    color: #ffffff;
+                }
+            }
+        }
     }
 }
 
