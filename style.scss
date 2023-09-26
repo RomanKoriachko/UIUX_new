@@ -888,6 +888,100 @@ body {
     }
 }
 
+.footer {
+    background-color: #121617;
+    color: #ffffff;
+    padding: 80px 0px;
+    .footer-content-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) 1.5fr;
+        gap: 40px;
+        .footer-logo {
+            margin-bottom: 40px;
+        }
+        .footer-subtitle {
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 48px;
+            letter-spacing: 0em;
+            margin-bottom: 24px;
+        }
+        .footer-text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            opacity: 0.8;
+            margin-bottom: 24px;
+        }
+        .footer-link {
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+    }
+    .footer-form {
+        background-color: #1e2425;
+        padding: 20px 24px;
+        justify-content: space-between;
+        .footer-email {
+            border: none;
+            background-color: transparent;
+            color: #ffffff;
+            width: 80%;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            &:focus,
+            &:focus-visible {
+                outline: none;
+            }
+            &::placeholder {
+                color: #ffffff;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0em;
+            }
+        }
+        .footer-form-btn {
+            background-color: transparent;
+            width: 22px;
+            height: 22px;
+            border: none;
+            background-image: url(images/send-img.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            cursor: pointer;
+        }
+    }
+    .footer-btns-row {
+        margin-top: 24px;
+        gap: 16px;
+        justify-content: flex-end;
+        .footer-btn {
+            width: 40px;
+            height: 40px;
+            background-color: #1e2425;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .footer-btn-twitter {
+            background-image: url(images/twitter-icon.svg);
+        }
+        .footer-btn-youtube {
+            background-image: url(images/youtube-icon.svg);
+        }
+        .footer-btn-instagram {
+            background-image: url(images/instagram-icon.svg);
+        }
+    }
+}
+
 // --- disable hover on touch devices ---
 
 @media (hover: hover) {
@@ -964,6 +1058,25 @@ body {
                         box-shadow: 0 0 10px 0 #49be01 inset,
                             0 0 20px 3px #49be01;
                     }
+                }
+            }
+        }
+    }
+
+    .footer {
+        .footer-content-row {
+            .footer-link {
+                transition: 0.2s all;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+        .footer-btns-row {
+            .footer-btn {
+                transition: 0.2s all;
+                &:hover {
+                    transform: scale(110%);
                 }
             }
         }

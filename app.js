@@ -37,3 +37,10 @@ $(document).ready(function () {
         dots: false,
     });
 });
+
+// ----- Navigation ------
+
+let aboutCourseBtn = document.querySelector(".header-menu-item-1");
+let aboutUsBtn = document.querySelector(".header-menu-item-2");
+let contactsBtn = document.querySelector(".header-menu-item-3");
+let registrationBtn = document.querySelector(".registration-btn");
