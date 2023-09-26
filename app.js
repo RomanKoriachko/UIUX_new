@@ -29,3 +29,11 @@ $(document).ready(function () {
         autoplay: true,
     });
 });
+
+$(document).ready(function () {
+    $(".review-slider").slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        dots: false,
+    });
+});

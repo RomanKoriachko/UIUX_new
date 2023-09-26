@@ -760,6 +760,132 @@ body {
             }
         }
     }
+    .review-section {
+        background-color: #2c2c2c;
+        color: white;
+        padding-top: 80px;
+        padding-bottom: 60px;
+        position: relative;
+        .review-title {
+            font-size: 64px;
+            font-weight: 600;
+            line-height: 83px;
+            letter-spacing: -0.04em;
+            margin-bottom: 60px;
+        }
+        .review-slider {
+            position: static;
+            .review-item {
+                background: linear-gradient(
+                        117.26deg,
+                        rgba(216, 216, 216, 0) 0%,
+                        rgba(216, 216, 216, 0) 100%
+                    ),
+                    linear-gradient(0deg, #ffffff, #ffffff);
+                border: 1px solid;
+                border-image-source: linear-gradient(
+                    117.26deg,
+                    rgba(216, 216, 216, 0) 0%,
+                    rgba(216, 216, 216, 0) 100%
+                );
+                padding: 24px 20px;
+                border-radius: 4px;
+                margin: 0px 10px;
+                .user-img-and-quote-row {
+                    justify-content: space-between;
+                }
+                .user-img {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                .user-img-1 {
+                    background-image: url(images/user-img-1.svg);
+                }
+                .user-img-2 {
+                    background-image: url(images/user-img-2.svg);
+                }
+                .user-img-3 {
+                    background-image: url(images/user-img-3.svg);
+                }
+                .user-img-4 {
+                    background-image: url(images/user-img-4.svg);
+                }
+                .user-img-5 {
+                    background-image: url(images/user-img-5.svg);
+                }
+                .user-img-6 {
+                    background-image: url(images/user-img-6.svg);
+                }
+                .user-img-7 {
+                    background-image: url(images/user-img-7.svg);
+                }
+                .quote-img {
+                    hanging-punctuation: 20px;
+                    width: 20px;
+                    background-image: url(images/icon-quote.svg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                .user-name {
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 18px;
+                    letter-spacing: 0px;
+                    color: #323232;
+                    margin: 10px 0px;
+                }
+                .rate {
+                    background-image: url(images/icon-rating.svg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    width: 94px;
+                    height: 14px;
+                    margin-bottom: 10px;
+                }
+                .user-review {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 25px;
+                    letter-spacing: 0px;
+                    color: #989898;
+                }
+            }
+            .slick-prev:before,
+            .slick-next:before {
+                content: "";
+            }
+            .slick-prev,
+            .slick-next {
+                top: 125px;
+                width: 50px;
+                height: 50px;
+                background-color: #ffffff;
+                border-radius: 50px;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .slick-prev {
+                left: auto;
+                right: 155px;
+                background-image: url(images/arrow-left-black.svg);
+                &:active {
+                    background-image: url(images/arrow-left-white.svg);
+                    background-color: #fa2702;
+                }
+            }
+            .slick-next {
+                right: 85px;
+                background-image: url(images/arrow-right-black.svg);
+                &:active {
+                    background-image: url(images/arrow-right-white.svg);
+                    background-color: #fa2702;
+                }
+            }
+        }
+    }
 }
 
 // --- disable hover on touch devices ---
