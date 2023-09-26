@@ -43,4 +43,37 @@ $(document).ready(function () {
 let aboutCourseBtn = document.querySelector(".header-menu-item-1");
 let aboutUsBtn = document.querySelector(".header-menu-item-2");
 let contactsBtn = document.querySelector(".header-menu-item-3");
-let registrationBtn = document.querySelector(".registration-btn");
+let registrationBtns = document.querySelectorAll(".registration-btn");
+
+let aspectSection = document.querySelector(".aspect-section");
+let numbersSection = document.querySelector(".numbers-section");
+let footer = document.querySelector(".footer");
+let formSection = document.querySelector(".form-section");
+
+aboutCourseBtn.addEventListener("click", function () {
+    window.scrollTo({
+        top: aspectSection.getBoundingClientRect().top + window.pageYOffset,
+        behavior: "smooth",
+    });
+});
+aboutUsBtn.addEventListener("click", function () {
+    window.scrollTo({
+        top: numbersSection.getBoundingClientRect().top + window.pageYOffset,
+        behavior: "smooth",
+    });
+});
+contactsBtn.addEventListener("click", function () {
+    window.scrollTo({
+        top: footer.getBoundingClientRect().top + window.pageYOffset,
+        behavior: "smooth",
+    });
+});
+
+for (let i = 0; i < registrationBtns.length; i++) {
+    registrationBtns[i].addEventListener("click", function () {
+        window.scrollTo({
+            top: formSection.getBoundingClientRect().top + window.pageYOffset,
+            behavior: "smooth",
+        });
+    });
+}
