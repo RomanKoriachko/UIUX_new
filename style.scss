@@ -679,6 +679,87 @@ body {
             }
         }
     }
+    .form-section {
+        padding: 60px 0px;
+        text-align: center;
+        .form-title {
+            font-size: 64px;
+            font-weight: 600;
+            line-height: 83px;
+            letter-spacing: -0.04em;
+            color: #121617;
+            text-align: left;
+            width: 68%;
+            margin: 0 auto;
+            > span {
+                color: #fa2702;
+            }
+        }
+        .form-subtitle {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 32px;
+            letter-spacing: 0em;
+            margin-top: 60px;
+            margin-bottom: 40px;
+            > span {
+                color: #4ebd09;
+            }
+        }
+        .form {
+            width: 50%;
+            margin: 0 auto;
+            padding: 0px 100px;
+            .form-input-label-wrapper {
+                text-align: left;
+                > label {
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    letter-spacing: 0em;
+                    color: #121617;
+                }
+            }
+            .form-input {
+                width: 100%;
+                height: 48px;
+                border: none;
+                border-bottom: 1px solid #2c2c2c;
+                margin-bottom: 20px;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 24px;
+                letter-spacing: 0em;
+                color: #989898;
+            }
+            .form-input::placeholder {
+                font-family: "Poppins", sans-serif;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 24px;
+                letter-spacing: 0em;
+                color: #989898;
+            }
+            .form-input:focus-visible,
+            .form-input:focus {
+                outline: none;
+                border-bottom: 1px solid #4ebd09;
+            }
+            .form-btn {
+                margin-top: 20px;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 24px;
+                letter-spacing: 0em;
+                color: white;
+                padding: 12px 15px;
+                background-color: #4ebd09;
+                border: none;
+                border-radius: 50px;
+                cursor: pointer;
+            }
+        }
+    }
 }
 
 // --- disable hover on touch devices ---
@@ -745,6 +826,17 @@ body {
                                 transition: 0.2s all;
                             }
                         }
+                    }
+                }
+            }
+        }
+        .form-section {
+            .form {
+                .form-btn {
+                    transition: 0.2s all;
+                    &:hover {
+                        box-shadow: 0 0 10px 0 #49be01 inset,
+                            0 0 20px 3px #49be01;
                     }
                 }
             }

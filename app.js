@@ -26,5 +26,6 @@ $(document).ready(function () {
         slidesToShow: 6,
         slidesToScroll: 1,
         variableWidth: true,
+        autoplay: true,
     });
 });
