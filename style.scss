@@ -20,6 +20,15 @@ body {
     padding: 0 82px;
 }
 
+@keyframes colorChange {
+    from {
+        background-color: #fa2702;
+    }
+    to {
+        background-color: #4ebd09;
+    }
+}
+
 // ------- Desktop -------
 
 .header {
@@ -56,6 +65,30 @@ body {
 }
 
 .main {
+    .scroll-up-btn {
+        position: fixed;
+        right: 50px;
+        bottom: 50px;
+        width: 102px;
+        height: 102px;
+        border-radius: 50px;
+        background-color: #fa2702;
+        background-image: url(images/scroll-up-btn.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: 0.3s all;
+        z-index: 100;
+        cursor: pointer;
+    }
+    .show {
+        opacity: 1;
+        visibility: visible;
+    }
+    .hide {
+        opacity: 0;
+        visibility: hidden;
+    }
+
     .intro-section {
         background-color: #121617;
         padding-top: 40px;
@@ -90,6 +123,7 @@ body {
             width: 100%;
             > img {
                 width: 100%;
+                filter: grayscale(100%);
             }
         }
         .intro-content-row {
@@ -208,6 +242,7 @@ body {
         padding: 40px 0px 60px 0px;
         background-color: #121617;
         color: #ffffff;
+        cursor: url(images/cursor.svg), auto;
         .aspect-subtitle {
             font-size: 24px;
             font-weight: 600;
@@ -248,23 +283,6 @@ body {
                 span {
                     color: #4ebd09;
                 }
-                .aspect-item-circle-fixed {
-                    position: absolute;
-                    bottom: -40px;
-                    right: 40px;
-                    width: 102px;
-                    height: 102px;
-                    background-color: #fa2702;
-                    border-radius: 50px;
-                    background-image: url(images/arrow-up-left.svg);
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    z-index: 10;
-                }
-            }
-            .aspect-wrapper-item:nth-child(2) {
-                background-color: #121617;
-                color: white;
             }
             .aspect-wrapper-item-btn {
                 display: flex;
@@ -272,7 +290,7 @@ body {
                 justify-content: center;
                 background-color: #fa2702;
                 color: white;
-                cursor: pointer;
+                // cursor: pointer;
             }
         }
     }
@@ -339,6 +357,7 @@ body {
         padding: 80px 0px;
         background-color: #121617;
         color: white;
+        cursor: url(images/cursor.svg), auto;
         .benefit-subtitle {
             font-size: 24px;
             font-weight: 600;
@@ -400,28 +419,6 @@ body {
                     line-height: 26px;
                     letter-spacing: -0.04em;
                     width: 65%;
-                }
-            }
-            .benefit-wrapper-item:nth-child(2) {
-                position: relative;
-                background-color: #121617;
-                color: white;
-                .benefit-wrapper-item-circle-wrapper {
-                    .benefit-wrapper-item-plus {
-                        background-image: url(images/plus-white.svg);
-                    }
-                }
-                .benefit-wrapper-item-circle-fixed {
-                    position: absolute;
-                    bottom: -40px;
-                    right: 20px;
-                    width: 102px;
-                    height: 102px;
-                    background-color: #fa2702;
-                    border-radius: 50%;
-                    background-image: url(images/arrow-up-left.svg);
-                    background-position: center;
-                    background-repeat: no-repeat;
                 }
             }
         }
@@ -550,6 +547,7 @@ body {
                         min-height: 40px;
                         background-color: #fa2702;
                         border-radius: 50px;
+                        border: none;
                         background-image: url(images/arrow-up-left.svg);
                         background-position: center;
                         background-repeat: no-repeat;
@@ -1004,6 +1002,14 @@ body {
 
     .main {
         .intro-section {
+            .intro-section-img {
+                > img {
+                    transition: 0.2s all;
+                    &:hover {
+                        filter: grayscale(0%);
+                    }
+                }
+            }
             .intro-content-row {
                 .intro-btn {
                     transition: 0.2s all;
@@ -1016,14 +1022,35 @@ body {
         }
         .aspect-section {
             .aspect-wrapper {
+                .aspect-wrapper-item {
+                    transition: 0.2s all;
+                    &:hover {
+                        background-color: #121617;
+                        color: white;
+                    }
+                }
                 .aspect-wrapper-item-btn {
                     .aspect-wrapper-item-text {
                         transition: 0.2s all;
                     }
+                }
+                .aspect-wrapper-item:last-child {
+                    &:hover {
+                        background-color: #fa2702;
+                    }
                     &:hover .aspect-wrapper-item-text {
+                        color: white;
                         transform: scale(110%);
                     }
                 }
+                // .aspect-wrapper-item-btn {
+                //     .aspect-wrapper-item-text {
+                //         transition: 0.2s all;
+                //     }
+                //     &:hover .aspect-wrapper-item-text {
+                //         transform: scale(110%);
+                //     }
+                // }
             }
         }
         .plan-section {
@@ -1034,13 +1061,32 @@ body {
                 }
             }
         }
+        .benefit-section {
+            .benefit-wrapper {
+                .benefit-wrapper-item {
+                    transition: 0.2s all;
+                    &:hover {
+                        background-color: #121617;
+                        color: white;
+                        .benefit-wrapper-item-circle-wrapper {
+                            .benefit-wrapper-item-plus {
+                                background-image: url(images/plus-white.svg);
+                            }
+                        }
+                    }
+                }
+            }
+        }
         .numbers-section {
             .numbers-wrapper {
                 .numbers-wrapper-text {
                     .numbers-wrapper-text-btn {
                         &:hover .red-circle {
-                            background-color: #4ebd09;
+                            // background-color: #4ebd09;
+                            animation: 1s ease-in-out 0s infinite alternate
+                                colorChange;
                         }
+
                         .numbers-wrapper-text-btn-row {
                             .red-circle {
                                 transition: 0.2s all;
@@ -1086,6 +1132,18 @@ body {
 // ------- Laptop -------
 
 @media (max-width: 1200px) {
+    .main {
+        .intro-section {
+            .intro-title {
+                font-size: 80px;
+            }
+        }
+        .aspect-section {
+            .aspect-title {
+                font-size: 80px;
+            }
+        }
+    }
 }
 
 // -------  Tablet -------

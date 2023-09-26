@@ -27,6 +27,7 @@ $(document).ready(function () {
         slidesToScroll: 1,
         variableWidth: true,
         autoplay: true,
+        autoplaySpeed: 2000,
     });
 });
 
@@ -77,3 +78,24 @@ for (let i = 0; i < registrationBtns.length; i++) {
         });
     });
 }
+
+// ----- Show scroll up button ------
+
+let scrollUpBtn = document.querySelector(".scroll-up-btn");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY >= window.innerHeight) {
+        scrollUpBtn.classList.add("show");
+        scrollUpBtn.classList.remove("hide");
+    } else {
+        scrollUpBtn.classList.add("hide");
+        scrollUpBtn.classList.remove("show");
+    }
+});
+
+scrollUpBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
+});

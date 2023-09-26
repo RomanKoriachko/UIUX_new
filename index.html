@@ -41,6 +41,7 @@
             </div>
         </header>
         <main class="main">
+            <div class="scroll-up-btn hide"></div>
             <section class="intro-section">
                 <div class="container">
                     <p class="intro-subtitle">
@@ -176,7 +177,6 @@
                                 <span>композиції та колористики</span> в
                                 діджитал
                             </p>
-                            <div class="aspect-item-circle-fixed"></div>
                         </div>
                         <div class="aspect-wrapper-item">
                             <div class="aspect-wrapper-item-circle"></div>
@@ -309,9 +309,6 @@
                                 до $100000 в перспективі, а також зручні умови:
                                 гнучкий графік або дистанційка. 
                             </p>
-                            <div
-                                class="benefit-wrapper-item-circle-fixed"
-                            ></div>
                         </div>
                         <div class="benefit-wrapper-item">
                             <div class="benefit-wrapper-item-circle-wrapper">
@@ -514,6 +511,7 @@
                                 <label for="name">Ім'я</label>
                             </div>
                             <input
+                                required
                                 type="text"
                                 name="name"
                                 id="name"
@@ -526,11 +524,30 @@
                                 <label for="email">Пошта</label>
                             </div>
                             <input
+                                required
                                 type="email"
                                 name="email"
                                 id="email"
                                 class="form-input"
                                 placeholder="Введіть пошту"
+                            />
+                        </div>
+                        <div class="form-input-wrapper">
+                            <div class="form-input-label-wrapper">
+                                <label for="number"
+                                    >Номер телефону (будь-якого
+                                    месенджера)</label
+                                >
+                            </div>
+                            <input
+                                required
+                                type="tel"
+                                name="number"
+                                id="number"
+                                class="form-input"
+                                placeholder="Введіть номер телефону"
+                                minlength="10"
+                                maxlength="12"
                             />
                         </div>
                         <button class="form-btn" type="submit">
@@ -695,6 +712,7 @@
                             action=""
                         >
                             <input
+                                required
                                 id="footer-email"
                                 name="footer-email"
                                 class="footer-email"

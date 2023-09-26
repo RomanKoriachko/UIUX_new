@@ -66,6 +66,14 @@ body {
   padding: 0 82px;
 }
 
+@keyframes colorChange {
+  from {
+    background-color: #fa2702;
+  }
+  to {
+    background-color: #4ebd09;
+  }
+}
 .header {
   background-color: #121617;
   color: #989898;
@@ -99,6 +107,29 @@ body {
   cursor: pointer;
 }
 
+.main .scroll-up-btn {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  width: 102px;
+  height: 102px;
+  border-radius: 50px;
+  background-color: #fa2702;
+  background-image: url(images/scroll-up-btn.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.3s all;
+  z-index: 100;
+  cursor: pointer;
+}
+.main .show {
+  opacity: 1;
+  visibility: visible;
+}
+.main .hide {
+  opacity: 0;
+  visibility: hidden;
+}
 .main .intro-section {
   background-color: #121617;
   padding-top: 40px;
@@ -135,6 +166,7 @@ body {
 }
 .main .intro-section .intro-section-img > img {
   width: 100%;
+  filter: grayscale(100%);
 }
 .main .intro-section .intro-content-row {
   margin-top: 40px;
@@ -247,6 +279,7 @@ body {
   padding: 40px 0px 60px 0px;
   background-color: #121617;
   color: #ffffff;
+  cursor: url(images/cursor.svg), auto;
 }
 .main .aspect-section .aspect-subtitle {
   font-size: 24px;
@@ -290,30 +323,12 @@ body {
 .main .aspect-section .aspect-wrapper .aspect-wrapper-item span {
   color: #4ebd09;
 }
-.main .aspect-section .aspect-wrapper .aspect-wrapper-item .aspect-item-circle-fixed {
-  position: absolute;
-  bottom: -40px;
-  right: 40px;
-  width: 102px;
-  height: 102px;
-  background-color: #fa2702;
-  border-radius: 50px;
-  background-image: url(images/arrow-up-left.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 10;
-}
-.main .aspect-section .aspect-wrapper .aspect-wrapper-item:nth-child(2) {
-  background-color: #121617;
-  color: white;
-}
 .main .aspect-section .aspect-wrapper .aspect-wrapper-item-btn {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #fa2702;
   color: white;
-  cursor: pointer;
 }
 .main .plan-section {
   padding: 100px 0px;
@@ -378,6 +393,7 @@ body {
   padding: 80px 0px;
   background-color: #121617;
   color: white;
+  cursor: url(images/cursor.svg), auto;
 }
 .main .benefit-section .benefit-subtitle {
   font-size: 24px;
@@ -443,26 +459,6 @@ body {
   line-height: 26px;
   letter-spacing: -0.04em;
   width: 65%;
-}
-.main .benefit-section .benefit-wrapper .benefit-wrapper-item:nth-child(2) {
-  position: relative;
-  background-color: #121617;
-  color: white;
-}
-.main .benefit-section .benefit-wrapper .benefit-wrapper-item:nth-child(2) .benefit-wrapper-item-circle-wrapper .benefit-wrapper-item-plus {
-  background-image: url(images/plus-white.svg);
-}
-.main .benefit-section .benefit-wrapper .benefit-wrapper-item:nth-child(2) .benefit-wrapper-item-circle-fixed {
-  position: absolute;
-  bottom: -40px;
-  right: 20px;
-  width: 102px;
-  height: 102px;
-  background-color: #fa2702;
-  border-radius: 50%;
-  background-image: url(images/arrow-up-left.svg);
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .main .example-section {
   background-color: #121617;
@@ -586,6 +582,7 @@ body {
   min-height: 40px;
   background-color: #fa2702;
   border-radius: 50px;
+  border: none;
   background-image: url(images/arrow-up-left.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -1029,16 +1026,33 @@ body {
   .header .registration-btn:hover {
     background-color: rgba(78, 189, 9, 0.2196078431);
   }
+  .main .intro-section .intro-section-img > img {
+    transition: 0.2s all;
+  }
+  .main .intro-section .intro-section-img > img:hover {
+    filter: grayscale(0%);
+  }
   .main .intro-section .intro-content-row .intro-btn {
     transition: 0.2s all;
   }
   .main .intro-section .intro-content-row .intro-btn:hover {
     box-shadow: 0 0 10px 0 #49be01 inset, 0 0 30px 5px #49be01;
   }
+  .main .aspect-section .aspect-wrapper .aspect-wrapper-item {
+    transition: 0.2s all;
+  }
+  .main .aspect-section .aspect-wrapper .aspect-wrapper-item:hover {
+    background-color: #121617;
+    color: white;
+  }
   .main .aspect-section .aspect-wrapper .aspect-wrapper-item-btn .aspect-wrapper-item-text {
     transition: 0.2s all;
   }
-  .main .aspect-section .aspect-wrapper .aspect-wrapper-item-btn:hover .aspect-wrapper-item-text {
+  .main .aspect-section .aspect-wrapper .aspect-wrapper-item:last-child:hover {
+    background-color: #fa2702;
+  }
+  .main .aspect-section .aspect-wrapper .aspect-wrapper-item:last-child:hover .aspect-wrapper-item-text {
+    color: white;
     transform: scale(110%);
   }
   .main .plan-section .plan-btn {
@@ -1047,8 +1061,18 @@ body {
   .main .plan-section .plan-btn:hover {
     box-shadow: 0 0 10px 0 #49be01 inset, 0 0 20px 3px #49be01;
   }
+  .main .benefit-section .benefit-wrapper .benefit-wrapper-item {
+    transition: 0.2s all;
+  }
+  .main .benefit-section .benefit-wrapper .benefit-wrapper-item:hover {
+    background-color: #121617;
+    color: white;
+  }
+  .main .benefit-section .benefit-wrapper .benefit-wrapper-item:hover .benefit-wrapper-item-circle-wrapper .benefit-wrapper-item-plus {
+    background-image: url(images/plus-white.svg);
+  }
   .main .numbers-section .numbers-wrapper .numbers-wrapper-text .numbers-wrapper-text-btn:hover .red-circle {
-    background-color: #4ebd09;
+    animation: 1s ease-in-out 0s infinite alternate colorChange;
   }
   .main .numbers-section .numbers-wrapper .numbers-wrapper-text .numbers-wrapper-text-btn .numbers-wrapper-text-btn-row .red-circle {
     transition: 0.2s all;
@@ -1070,5 +1094,13 @@ body {
   }
   .footer .footer-btns-row .footer-btn:hover {
     transform: scale(110%);
+  }
+}
+@media (max-width: 1200px) {
+  .main .intro-section .intro-title {
+    font-size: 80px;
+  }
+  .main .aspect-section .aspect-title {
+    font-size: 80px;
   }
 }
