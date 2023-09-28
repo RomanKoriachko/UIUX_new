@@ -319,6 +319,10 @@ body {
   border-radius: 50px;
   background-color: #fa2702;
   margin-bottom: 10px;
+  background-image: url(images/arrow-up-black.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60%;
 }
 .main .aspect-section .aspect-wrapper .aspect-wrapper-item span {
   color: #4ebd09;
@@ -1044,6 +1048,9 @@ body {
   .main .aspect-section .aspect-wrapper .aspect-wrapper-item:hover {
     background-color: #121617;
     color: white;
+  }
+  .main .aspect-section .aspect-wrapper .aspect-wrapper-item:hover .aspect-wrapper-item-circle {
+    background-image: url(images/arrow-up-white.svg);
   }
   .main .aspect-section .aspect-wrapper .aspect-wrapper-item-btn .aspect-wrapper-item-text {
     transition: 0.2s all;

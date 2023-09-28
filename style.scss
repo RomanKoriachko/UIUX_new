@@ -279,6 +279,10 @@ body {
                     border-radius: 50px;
                     background-color: #fa2702;
                     margin-bottom: 10px;
+                    background-image: url(images/arrow-up-black.svg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 60%;
                 }
                 span {
                     color: #4ebd09;
@@ -1027,6 +1031,9 @@ body {
                     &:hover {
                         background-color: #121617;
                         color: white;
+                    }
+                    &:hover .aspect-wrapper-item-circle {
+                        background-image: url(images/arrow-up-white.svg);
                     }
                 }
                 .aspect-wrapper-item-btn {
