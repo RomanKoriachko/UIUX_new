@@ -17,6 +17,7 @@
             href="https://unpkg.com/aos@2.3.1/dist/aos.css"
             rel="stylesheet"
         />
+        <script src="jquery.js"></script>
     </head>
     <body>
         <header class="header">
@@ -36,7 +37,9 @@
                             Контакти
                         </div>
                     </div>
-                    <button class="registration-btn">Реєстрація</button>
+                    <button class="animated-btn registration-btn">
+                        Реєстрація<span></span>
+                    </button>
                 </div>
             </div>
         </header>
@@ -59,8 +62,8 @@
                         <img src="images/intro-section-img.jpg" alt="" />
                     </div>
                     <div class="row intro-content-row">
-                        <button class="intro-btn registration-btn">
-                            <span>Зареєструватися</span>
+                        <button class="animated-btn registration-btn">
+                            Зареєструватися<span></span>
                         </button>
                         <p class="intro-content-item">
                             10/06/<span>2023</span>
@@ -272,9 +275,16 @@
                             </p>
                         </div>
                     </div>
-                    <button class="plan-btn registration-btn">
-                        Зробити крок
-                    </button>
+                    <!-- <div class="plan-btn-wrapper">
+                        <a href="#form-section" class="animated-btn"
+                            >Зробити крок<span></span
+                        ></a>
+                    </div> -->
+                    <div class="plan-btn-wrapper">
+                        <button class="animated-btn registration-btn">
+                            Зробити крок<span></span>
+                        </button>
+                    </div>
                 </div>
             </section>
             <section class="benefit-section">
@@ -489,7 +499,7 @@
                     <div class="slider-item slider-item-30"></div>
                 </div>
             </section>
-            <section class="form-section">
+            <section id="form-section" class="form-section">
                 <div class="container">
                     <p class="form-title" data-aos="fade-down">
                         Заповніть форму для участі у
@@ -550,9 +560,11 @@
                                 maxlength="12"
                             />
                         </div>
-                        <button class="form-btn" type="submit">
-                            Надіслати заявку
-                        </button>
+                        <div class="btn-wrapper">
+                            <button class="animated-btn" type="submit">
+                                Надіслати заявку<span></span>
+                            </button>
+                        </div>
                     </form>
                 </div>
             </section>

@@ -1,4 +1,5 @@
 @use "reset";
+@use "btnStyle";
 
 // ------- Global params -------
 
@@ -29,6 +30,64 @@ body {
     }
 }
 
+@mixin animatedButton($width, $height, $fontSize) {
+    $btn-width: $width !default;
+    $btn-height: $height !default;
+    $btn-full: $btn-height + $btn-width !default;
+    $btn-half: $btn-full/2 !default;
+
+    background-color: transparent;
+    cursor: pointer;
+
+    text-decoration: none;
+    line-height: $btn-height;
+    color: black;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+
+    position: relative;
+    display: block;
+    overflow: hidden;
+    @include btnStyle.size(100%, $btn-height);
+    max-width: $btn-width;
+    border: 1px solid currentColor;
+    border-radius: 50px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: $fontSize;
+    font-weight: 700;
+    letter-spacing: 0em;
+
+    $btn-color: #4ebd09;
+    $btn-color-dark: #4ebd09;
+    color: btnStyle.tint($btn-color);
+    z-index: 2;
+
+    span {
+        @include btnStyle.absolute();
+        display: block;
+        @include btnStyle.size(0);
+        border-radius: 50%;
+        background: $btn-color-dark;
+        transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+
+    &:active {
+        background-color: #121617;
+    }
+
+    @media (hover: hover) {
+        &:hover {
+            color: #121617;
+            span {
+                @include btnStyle.size(225%, $btn-width * 2.25);
+            }
+        }
+    }
+}
+
 // ------- Desktop -------
 
 .header {
@@ -51,16 +110,19 @@ body {
             cursor: pointer;
         }
     }
-    .registration-btn {
-        color: #4ebd09;
-        background-color: transparent;
-        border-radius: 50px;
-        border: 1px solid #4ebd09;
-        padding: 12px 42px;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 24px;
-        cursor: pointer;
+    // .registration-btn {
+    //     color: #4ebd09;
+    //     background-color: transparent;
+    //     border-radius: 50px;
+    //     border: 1px solid #4ebd09;
+    //     padding: 12px 42px;
+    //     font-weight: 700;
+    //     font-size: 16px;
+    //     line-height: 24px;
+    //     cursor: pointer;
+    // }
+    .animated-btn {
+        @include animatedButton(176px, 48px, 16px);
     }
 }
 
@@ -130,22 +192,25 @@ body {
             margin-top: 40px;
             align-items: center;
             justify-content: space-between;
-            .intro-btn {
-                border-radius: 50px;
-                border: none;
-                background-image: linear-gradient(
-                    297.99deg,
-                    #49be01 -14.48%,
-                    #99ff48 110.19%
-                );
-                color: #121617;
-                font-size: 24px;
-                font-weight: 700;
-                line-height: 36px;
-                letter-spacing: 0em;
-                padding: 22px 27px;
-                cursor: pointer;
+            .animated-btn {
+                @include animatedButton(267px, 80px, 24px);
             }
+            // .intro-btn {
+            //     border-radius: 50px;
+            //     border: none;
+            //     background-image: linear-gradient(
+            //         297.99deg,
+            //         #49be01 -14.48%,
+            //         #99ff48 110.19%
+            //     );
+            //     color: #121617;
+            //     font-size: 24px;
+            //     font-weight: 700;
+            //     line-height: 36px;
+            //     letter-spacing: 0em;
+            //     padding: 22px 27px;
+            //     cursor: pointer;
+            // }
             .intro-content-item {
                 font-size: 20px;
                 font-weight: 900;
@@ -343,19 +408,26 @@ body {
                 letter-spacing: 0em;
             }
         }
-        .plan-btn {
-            margin-top: 70px;
-            padding: 12px 30px;
-            background-color: #4ebd09;
-            border-radius: 50px;
-            font-size: 16px;
-            font-weight: 700;
-            line-height: 24px;
-            letter-spacing: 0em;
-            color: white;
-            border: none;
-            cursor: pointer;
+        .plan-btn-wrapper {
+            display: flex;
+            justify-content: center;
         }
+        .animated-btn {
+            margin-top: 70px;
+            @include animatedButton(176px, 48px, 16px);
+        }
+        // .plan-btn {
+        //     padding: 12px 30px;
+        //     background-color: #4ebd09;
+        //     border-radius: 50px;
+        //     font-size: 16px;
+        //     font-weight: 700;
+        //     line-height: 24px;
+        //     letter-spacing: 0em;
+        //     color: white;
+        //     border: none;
+        //     cursor: pointer;
+        // }
     }
     .benefit-section {
         padding: 80px 0px;
@@ -552,11 +624,11 @@ body {
                         background-color: #fa2702;
                         border-radius: 50px;
                         border: none;
-                        background-image: url(images/arrow-up-left.svg);
+                        background-image: url(images/arrow-up-white.svg);
                         background-position: center;
                         background-repeat: no-repeat;
-                        background-size: 70%;
-                        transform: rotate(180deg);
+                        background-size: 50%;
+                        transform: rotate(140deg);
                     }
                 }
             }
@@ -747,19 +819,27 @@ body {
                 outline: none;
                 border-bottom: 1px solid #4ebd09;
             }
-            .form-btn {
-                margin-top: 20px;
-                font-size: 16px;
-                font-weight: 700;
-                line-height: 24px;
-                letter-spacing: 0em;
-                color: white;
-                padding: 12px 15px;
-                background-color: #4ebd09;
-                border: none;
-                border-radius: 50px;
-                cursor: pointer;
+            .btn-wrapper {
+                display: flex;
+                justify-content: center;
             }
+            .animated-btn {
+                margin-top: 40px;
+                @include animatedButton(176px, 48px, 16px);
+            }
+            // .form-btn {
+            //     margin-top: 20px;
+            //     font-size: 16px;
+            //     font-weight: 700;
+            //     line-height: 24px;
+            //     letter-spacing: 0em;
+            //     color: white;
+            //     padding: 12px 15px;
+            //     background-color: #4ebd09;
+            //     border: none;
+            //     border-radius: 50px;
+            //     cursor: pointer;
+            // }
         }
     }
     .review-section {
@@ -996,12 +1076,12 @@ body {
                 }
             }
         }
-        .registration-btn {
-            transition: 0.2s all;
-            &:hover {
-                background-color: #4ebd0938;
-            }
-        }
+        // .registration-btn {
+        //     transition: 0.2s all;
+        //     &:hover {
+        //         background-color: #4ebd0938;
+        //     }
+        // }
     }
 
     .main {
@@ -1061,10 +1141,15 @@ body {
             }
         }
         .plan-section {
-            .plan-btn {
-                transition: 0.2s all;
+            // .plan-btn {
+            //     transition: 0.2s all;
+            //     &:hover {
+            //         box-shadow: 0 0 10px 0 #49be01 inset, 0 0 20px 3px #49be01;
+            //     }
+            // }
+            .animated-btn {
                 &:hover {
-                    box-shadow: 0 0 10px 0 #49be01 inset, 0 0 20px 3px #49be01;
+                    color: #ffffff;
                 }
             }
         }
@@ -1105,11 +1190,16 @@ body {
         }
         .form-section {
             .form {
-                .form-btn {
-                    transition: 0.2s all;
+                // .form-btn {
+                //     transition: 0.2s all;
+                //     &:hover {
+                //         box-shadow: 0 0 10px 0 #49be01 inset,
+                //             0 0 20px 3px #49be01;
+                //     }
+                // }
+                .animated-btn {
                     &:hover {
-                        box-shadow: 0 0 10px 0 #49be01 inset,
-                            0 0 20px 3px #49be01;
+                        color: #ffffff;
                     }
                 }
             }
