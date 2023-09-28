@@ -354,6 +354,9 @@ body {
                 }
             }
             .aspect-wrapper-item-btn {
+                @include animatedButton(100%, 100%, 24px);
+                border-radius: 0px;
+                border-color: transparent;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -1117,19 +1120,24 @@ body {
                     }
                 }
                 .aspect-wrapper-item-btn {
-                    .aspect-wrapper-item-text {
-                        transition: 0.2s all;
-                    }
-                }
-                .aspect-wrapper-item:last-child {
                     &:hover {
-                        background-color: #fa2702;
-                    }
-                    &:hover .aspect-wrapper-item-text {
-                        color: white;
-                        transform: scale(110%);
+                        border-color: #49be01;
                     }
                 }
+                // .aspect-wrapper-item-btn {
+                //     .aspect-wrapper-item-text {
+                //         transition: 0.2s all;
+                //     }
+                // }
+                // .aspect-wrapper-item:last-child {
+                //     &:hover {
+                //         background-color: #fa2702;
+                //     }
+                //     &:hover .aspect-wrapper-item-text {
+                //         color: white;
+                //         transform: scale(110%);
+                //     }
+                // }
                 // .aspect-wrapper-item-btn {
                 //     .aspect-wrapper-item-text {
                 //         transition: 0.2s all;
