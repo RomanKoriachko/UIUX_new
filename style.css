@@ -1330,6 +1330,9 @@ body {
   .main .intro-section .btn-laptop-wrapper {
     margin-top: 24px;
   }
+  .main .about-section .about-wrapper {
+    grid-template-columns: 1fr;
+  }
 }
 @media (max-width: 576px) {
   .container {
@@ -1374,5 +1377,29 @@ body {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .main .about-section {
+    padding-top: 40px;
+  }
+  .main .about-section .about-title {
+    font-size: 32px;
+    line-height: 42px;
+    margin-bottom: 44px;
+  }
+  .main .about-section .about-wrapper {
+    gap: 16px;
+  }
+  .main .about-section .about-wrapper .about-item-left {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .main .about-section .about-wrapper .about-item-right {
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom: 8px;
+  }
+  .main .about-section .about-img {
+    margin-top: 24px;
+    height: 200px;
   }
 }
