@@ -100,7 +100,7 @@ body {
         align-items: center;
         justify-content: space-between;
     }
-    .heaader-menu {
+    .header-menu {
         gap: 40px;
         font-size: 16px;
         font-weight: 500;
@@ -110,17 +110,6 @@ body {
             cursor: pointer;
         }
     }
-    // .registration-btn {
-    //     color: #4ebd09;
-    //     background-color: transparent;
-    //     border-radius: 50px;
-    //     border: 1px solid #4ebd09;
-    //     padding: 12px 42px;
-    //     font-weight: 700;
-    //     font-size: 16px;
-    //     line-height: 24px;
-    //     cursor: pointer;
-    // }
     .animated-btn {
         @include animatedButton(176px, 48px, 16px);
     }
@@ -1269,9 +1258,29 @@ body {
 // -------  Tablet -------
 
 @media (max-width: 992px) {
+    .header {
+        .header-menu {
+            display: none;
+        }
+    }
 }
 
 // ------- Mobile -------
 
 @media (max-width: 576px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .header {
+        .header-row {
+            justify-content: center;
+            img {
+                height: 44px;
+            }
+        }
+        .animated-btn {
+            display: none;
+        }
+    }
 }
