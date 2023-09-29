@@ -181,9 +181,6 @@ body {
             margin-top: 40px;
             align-items: center;
             justify-content: space-between;
-            .animated-btn {
-                @include animatedButton(267px, 80px, 24px);
-            }
             // .intro-btn {
             //     border-radius: 50px;
             //     border: none;
@@ -211,6 +208,17 @@ body {
                     color: #ffffff;
                 }
             }
+        }
+        .animated-btn {
+            @include animatedButton(267px, 80px, 24px);
+        }
+        .btn-laptop-wrapper {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        .animated-btn-laptop {
+            display: none;
         }
     }
     .about-section {
@@ -1246,6 +1254,12 @@ body {
             .intro-title {
                 font-size: 80px;
             }
+            .animated-btn {
+                display: none;
+            }
+            .animated-btn-laptop {
+                display: block;
+            }
         }
         .aspect-section {
             .aspect-title {
@@ -1263,6 +1277,28 @@ body {
             display: none;
         }
     }
+
+    .main {
+        .intro-section {
+            .intro-title {
+                font-size: 64px;
+                line-height: 84px;
+            }
+            .intro-section-img {
+                > img {
+                    filter: grayscale(0);
+                }
+            }
+            .intro-content-row {
+                flex-direction: column;
+                margin-top: 24px;
+                gap: 16px;
+            }
+            .btn-laptop-wrapper {
+                margin-top: 24px;
+            }
+        }
+    }
 }
 
 // ------- Mobile -------
@@ -1275,12 +1311,45 @@ body {
     .header {
         .header-row {
             justify-content: center;
+            margin: 0px 20px;
             img {
                 height: 44px;
             }
         }
         .animated-btn {
             display: none;
+        }
+    }
+
+    .main {
+        .intro-section {
+            padding-top: 10px;
+            padding-bottom: 40px;
+            .intro-subtitle {
+                font-size: 20px;
+                line-height: 30px;
+            }
+            .intro-title {
+                padding-top: 20px;
+                padding-bottom: 24px;
+            }
+            .intro-text {
+                font-size: 16px;
+                line-height: 28px;
+                margin-bottom: 16px;
+            }
+            .intro-section-img {
+                height: 240px;
+                padding: 0px 0px;
+                width: 106%;
+                overflow: hidden;
+                margin-left: -16px;
+                > img {
+                    width: auto;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
         }
     }
 }
