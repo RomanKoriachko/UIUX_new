@@ -79,17 +79,6 @@ for (let i = 0; i < registrationBtns.length; i++) {
     });
 }
 
-// var $page = $("html, body");
-// $('a[href*="#"]').click(function () {
-//     $page.animate(
-//         {
-//             scrollTop: $($.attr(this, "href")).offset().top,
-//         },
-//         1200
-//     );
-//     return false;
-// });
-
 // ----- Show scroll up button ------
 
 let scrollUpBtn = document.querySelector(".scroll-up-btn");

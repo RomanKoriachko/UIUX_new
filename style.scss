@@ -517,11 +517,13 @@ body {
         }
         .example-section-slider {
             .slider-item {
-                // max-width: 1440px;
+                max-width: 1440px;
                 margin: 0px 30px;
-                // margin: 0 auto;
-                > img {
-                    width: 100vh;
+                .example-slider-img-wrapper {
+                    width: 100%;
+                    > img {
+                        width: 100%;
+                    }
                 }
             }
             .slick-prev:before,
@@ -532,8 +534,10 @@ body {
             .slick-next {
                 height: 60px;
                 width: 60px;
+                border-radius: 50px;
                 background-position: center;
                 background-repeat: no-repeat;
+                background-size: 30%;
             }
             .slick-prev {
                 left: 50px;
@@ -1173,6 +1177,17 @@ body {
                                 background-image: url(images/plus-white.svg);
                             }
                         }
+                    }
+                }
+            }
+        }
+        .example-section {
+            .example-section-slider {
+                .slick-prev,
+                .slick-next {
+                    transition: 0.2s all;
+                    &:hover {
+                        background-color: #ffffff63;
                     }
                 }
             }

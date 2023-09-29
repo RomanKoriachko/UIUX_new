@@ -632,10 +632,14 @@ body {
   color: #4ebd09;
 }
 .main .example-section .example-section-slider .slider-item {
+  max-width: 1440px;
   margin: 0px 30px;
 }
-.main .example-section .example-section-slider .slider-item > img {
-  width: 100vh;
+.main .example-section .example-section-slider .slider-item .example-slider-img-wrapper {
+  width: 100%;
+}
+.main .example-section .example-section-slider .slider-item .example-slider-img-wrapper > img {
+  width: 100%;
 }
 .main .example-section .example-section-slider .slick-prev:before,
 .main .example-section .example-section-slider .slick-next:before {
@@ -645,8 +649,10 @@ body {
 .main .example-section .example-section-slider .slick-next {
   height: 60px;
   width: 60px;
+  border-radius: 50px;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 30%;
 }
 .main .example-section .example-section-slider .slick-prev {
   left: 50px;
@@ -1252,6 +1258,14 @@ body {
   }
   .main .benefit-section .benefit-wrapper .benefit-wrapper-item:hover .benefit-wrapper-item-circle-wrapper .benefit-wrapper-item-plus {
     background-image: url(images/plus-white.svg);
+  }
+  .main .example-section .example-section-slider .slick-prev,
+  .main .example-section .example-section-slider .slick-next {
+    transition: 0.2s all;
+  }
+  .main .example-section .example-section-slider .slick-prev:hover,
+  .main .example-section .example-section-slider .slick-next:hover {
+    background-color: rgba(255, 255, 255, 0.3882352941);
   }
   .main .numbers-section .numbers-wrapper .numbers-wrapper-text .numbers-wrapper-text-btn:hover .red-circle {
     animation: 1s ease-in-out 0s infinite alternate colorChange;
