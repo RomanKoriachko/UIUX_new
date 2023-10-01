@@ -396,10 +396,20 @@ body {
   border-radius: 50px;
   background-color: #fa2702;
   margin-bottom: 10px;
+  background-size: 60%;
+  position: relative;
+}
+.main .aspect-section .aspect-wrapper .aspect-wrapper-item .aspect-wrapper-item-circle .aspect-wrapper-item-circle-arrow {
   background-image: url(images/arrow-up-black.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 60%;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  transform: rotate(-40deg);
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
 }
 .main .aspect-section .aspect-wrapper .aspect-wrapper-item span {
   color: #4ebd09;
@@ -426,6 +436,7 @@ body {
   letter-spacing: 0em;
   color: #69c72e;
   z-index: 2;
+  cursor: url(images/cursor.svg), auto;
   border-radius: 0px;
   border-color: transparent;
   display: flex;
@@ -1248,7 +1259,7 @@ body {
     background-color: #121617;
     color: white;
   }
-  .main .aspect-section .aspect-wrapper .aspect-wrapper-item:hover .aspect-wrapper-item-circle {
+  .main .aspect-section .aspect-wrapper .aspect-wrapper-item:hover .aspect-wrapper-item-circle-arrow {
     background-image: url(images/arrow-up-white.svg);
   }
   .main .aspect-section .aspect-wrapper .aspect-wrapper-item-btn:hover {
@@ -1310,6 +1321,12 @@ body {
   .main .aspect-section .aspect-title {
     font-size: 80px;
   }
+  .main .suitable-section .suitable-title {
+    width: 85%;
+  }
+  .main .aspect-section .aspect-wrapper .aspect-wrapper-item {
+    font-size: 26px;
+  }
 }
 @media (max-width: 992px) {
   .header .header-menu {
@@ -1330,8 +1347,29 @@ body {
   .main .intro-section .btn-laptop-wrapper {
     margin-top: 24px;
   }
+  .main .about-section .about-title {
+    font-size: 62px;
+  }
   .main .about-section .about-wrapper {
     grid-template-columns: 1fr;
+  }
+  .main .suitable-section .suitable-title {
+    width: 100%;
+    font-size: 57px;
+  }
+  .main .suitable-section .suitable-wrapper {
+    width: 100%;
+  }
+  .main .suitable-section .suitable-wrapper .suitable-text {
+    margin-left: 0;
+  }
+  .main .aspect-section .aspect-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .main .aspect-section .aspect-title {
+    font-size: 57px;
+    line-height: 67px;
   }
 }
 @media (max-width: 576px) {
@@ -1348,9 +1386,17 @@ body {
   .header .animated-btn {
     display: none;
   }
+  .main .scroll-up-btn {
+    width: 60px;
+    height: 60px;
+    background-size: 50%;
+    right: 25px;
+    bottom: 25px;
+  }
   .main .intro-section {
     padding-top: 10px;
     padding-bottom: 40px;
+    overflow: hidden;
   }
   .main .intro-section .intro-subtitle {
     font-size: 20px;
@@ -1368,12 +1414,12 @@ body {
   .main .intro-section .intro-section-img {
     height: 240px;
     padding: 0px 0px;
-    width: 106%;
+    width: 107%;
     overflow: hidden;
     margin-left: -16px;
   }
   .main .intro-section .intro-section-img > img {
-    width: auto;
+    width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
@@ -1401,5 +1447,45 @@ body {
   .main .about-section .about-img {
     margin-top: 24px;
     height: 200px;
+  }
+  .main .suitable-section {
+    padding-top: 42px;
+    padding-bottom: 37px;
+  }
+  .main .suitable-section .suitable-title {
+    font-size: 32px;
+    line-height: 42px;
+    margin-bottom: 24px;
+  }
+  .main .suitable-section .suitable-wrapper .suitable-subtitle {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .main .suitable-section .suitable-wrapper .suitable-text {
+    font-size: 16px;
+    line-height: 32px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+  }
+  .main .aspect-section {
+    padding-top: 42px;
+    padding-bottom: 16px;
+  }
+  .main .aspect-section .aspect-subtitle {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .main .aspect-section .aspect-title {
+    font-size: 36px;
+    line-height: 46px;
+    margin-top: 8px;
+    margin-bottom: 24px;
+  }
+  .main .aspect-section .aspect-wrapper .aspect-wrapper-item {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .main .aspect-section .aspect-wrapper .aspect-wrapper-item-btn {
+    font-size: 30px;
   }
 }
