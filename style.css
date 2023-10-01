@@ -1614,4 +1614,18 @@ body {
   .main .numbers-section .numbers-wrapper .numbers-wrapper-text .numbers-wrapper-text-btn .numbers-wrapper-text-btn-row {
     justify-content: center;
   }
+  .main .companies-section {
+    padding-top: 42px;
+    padding-bottom: 30px;
+  }
+  .main .companies-section .companies-title {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .main .companies-section .companies-slider .slider-item {
+    width: 100px;
+    height: 100px;
+    margin: 0px 30px;
+    background-size: contain;
+  }
 }

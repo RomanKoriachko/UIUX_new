@@ -33,6 +33,15 @@ $(document).ready(function () {
         variableWidth: true,
         autoplay: true,
         autoplaySpeed: 2000,
+        responsive: [
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 3,
+                    variableWidth: false,
+                },
+            },
+        ],
     });
 });
 
