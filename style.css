@@ -82,7 +82,7 @@ body {
   background-color: #121617;
   color: #989898;
   position: relative;
-  transition: 0.3s all;
+  transition: 0.2s all;
 }
 .header .header-row {
   border-bottom: 2px solid #4ebd09;
@@ -157,7 +157,7 @@ body {
   background-color: white;
   padding: 24px 0px 54px;
   text-align: center;
-  transition: 0.3s all;
+  transition: 0.2s all;
   filter: blur(0px);
 }
 .header .burger-menu .burger-menu-item {
