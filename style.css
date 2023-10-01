@@ -1332,6 +1332,9 @@ body {
   .main .form-section .form {
     padding: 0px;
   }
+  .footer .footer-content-row {
+    grid-template-columns: 1fr 2fr;
+  }
 }
 @media (max-width: 992px) {
   .header .header-menu {
@@ -1635,6 +1638,9 @@ body {
   .main .numbers-section .numbers-wrapper .numbers-wrapper-text .numbers-wrapper-text-btn .numbers-wrapper-text-btn-row {
     justify-content: center;
   }
+  .main .numbers-section .numbers-wrapper .numbers-wrapper-indicators .numbers-wrapper-indicators-item {
+    padding: 50px 30px;
+  }
   .main .companies-section {
     padding-top: 42px;
     padding-bottom: 30px;
@@ -1687,5 +1693,25 @@ body {
   }
   .main .review-section .review-slider .slick-next {
     right: 10px;
+  }
+  .footer {
+    padding-top: 42px;
+    padding-bottom: 28px;
+  }
+  .footer .footer-content-row {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .footer .footer-content-row .footer-logo {
+    margin-bottom: 16px;
+  }
+  .footer .footer-content-row .footer-text:last-child {
+    margin-bottom: 0;
+  }
+  .footer .footer-content-row .footer-row-item:last-child {
+    margin-top: 24px;
+  }
+  .footer .footer-btns-row {
+    justify-content: center;
   }
 }

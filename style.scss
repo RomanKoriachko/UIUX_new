@@ -1277,6 +1277,12 @@ body {
             }
         }
     }
+
+    .footer {
+        .footer-content-row {
+            grid-template-columns: 1fr 2fr;
+        }
+    }
 }
 
 // -------  Tablet -------
@@ -1627,6 +1633,11 @@ body {
                         }
                     }
                 }
+                .numbers-wrapper-indicators {
+                    .numbers-wrapper-indicators-item {
+                        padding: 50px 30px;
+                    }
+                }
             }
         }
         .companies-section {
@@ -1687,6 +1698,27 @@ body {
                     right: 10px;
                 }
             }
+        }
+    }
+
+    .footer {
+        padding-top: 42px;
+        padding-bottom: 28px;
+        .footer-content-row {
+            grid-template-columns: 1fr;
+            gap: 32px;
+            .footer-logo {
+                margin-bottom: 16px;
+            }
+            .footer-text:last-child {
+                margin-bottom: 0;
+            }
+            .footer-row-item:last-child {
+                margin-top: 24px;
+            }
+        }
+        .footer-btns-row {
+            justify-content: center;
         }
     }
 }
