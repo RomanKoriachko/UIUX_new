@@ -1271,6 +1271,11 @@ body {
                 }
             }
         }
+        .form-section {
+            .form {
+                padding: 0px;
+            }
+        }
     }
 }
 
@@ -1362,6 +1367,17 @@ body {
                         line-height: 74px;
                     }
                 }
+            }
+        }
+        .form-section {
+            .form-title {
+                width: 100%;
+                text-align: center;
+                font-size: 57px;
+                line-height: 67px;
+            }
+            .form {
+                width: 100%;
             }
         }
     }
@@ -1613,6 +1629,26 @@ body {
                     height: 100px;
                     margin: 0px 30px;
                     background-size: contain;
+                }
+            }
+        }
+        .form-section {
+            padding-top: 32px;
+            padding-bottom: 42px;
+            .form-title {
+                font-size: 32px;
+                line-height: 42px;
+            }
+            .form-subtitle {
+                font-size: 16px;
+                line-height: 26px;
+                margin: 16px 0px;
+            }
+            .form {
+                .animated-btn {
+                    margin-top: 32px;
+                    width: 100%;
+                    max-width: 100%;
                 }
             }
         }

@@ -1329,6 +1329,9 @@ body {
   .main .numbers-section .numbers-wrapper .numbers-wrapper-text {
     padding-left: 0;
   }
+  .main .form-section .form {
+    padding: 0px;
+  }
 }
 @media (max-width: 992px) {
   .header .header-menu {
@@ -1401,6 +1404,15 @@ body {
     width: 100%;
     font-size: 64px;
     line-height: 74px;
+  }
+  .main .form-section .form-title {
+    width: 100%;
+    text-align: center;
+    font-size: 57px;
+    line-height: 67px;
+  }
+  .main .form-section .form {
+    width: 100%;
   }
 }
 @media (max-width: 576px) {
@@ -1627,5 +1639,23 @@ body {
     height: 100px;
     margin: 0px 30px;
     background-size: contain;
+  }
+  .main .form-section {
+    padding-top: 32px;
+    padding-bottom: 42px;
+  }
+  .main .form-section .form-title {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .main .form-section .form-subtitle {
+    font-size: 16px;
+    line-height: 26px;
+    margin: 16px 0px;
+  }
+  .main .form-section .form .animated-btn {
+    margin-top: 32px;
+    width: 100%;
+    max-width: 100%;
   }
 }
