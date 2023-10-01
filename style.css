@@ -1687,11 +1687,16 @@ body {
     height: 100%;
     width: auto;
   }
+  .main .example-section .example-section-slider .slick-prev,
+  .main .example-section .example-section-slider .slick-next {
+    height: 40px;
+    width: 40px;
+  }
   .main .example-section .example-section-slider .slick-prev {
-    left: 25px;
+    left: 0px;
   }
   .main .example-section .example-section-slider .slick-next {
-    right: 25px;
+    right: 0px;
   }
   .main .numbers-section {
     padding-top: 42px;
