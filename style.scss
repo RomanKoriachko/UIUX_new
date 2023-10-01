@@ -1264,6 +1264,13 @@ body {
                 width: 85%;
             }
         }
+        .numbers-section {
+            .numbers-wrapper {
+                .numbers-wrapper-text {
+                    padding-left: 0;
+                }
+            }
+        }
     }
 }
 
@@ -1305,6 +1312,7 @@ body {
             }
         }
         .suitable-section {
+            overflow: hidden;
             .suitable-title {
                 width: 100%;
                 font-size: 57px;
@@ -1327,6 +1335,7 @@ body {
             }
         }
         .plan-section {
+            overflow: hidden;
             .plan-wrapper {
                 width: 100%;
             }
@@ -1339,6 +1348,20 @@ body {
             }
             .benefit-wrapper {
                 grid-template-columns: 1fr;
+            }
+        }
+        .numbers-section {
+            overflow: hidden;
+            .numbers-wrapper {
+                grid-template-columns: 1fr;
+                gap: 24px;
+                .numbers-wrapper-text {
+                    .numbers-wrapper-text-title {
+                        width: 100%;
+                        font-size: 64px;
+                        line-height: 74px;
+                    }
+                }
             }
         }
     }
@@ -1551,6 +1574,29 @@ body {
                 }
                 .slick-next {
                     right: 25px;
+                }
+            }
+        }
+        .numbers-section {
+            padding-top: 42px;
+            padding-bottom: 0px;
+            .numbers-wrapper {
+                .numbers-wrapper-text {
+                    .numbers-wrapper-text-title {
+                        font-size: 32px;
+                        line-height: 42px;
+                    }
+                    .numbers-wrapper-text-subtitle {
+                        font-size: 16px;
+                        line-height: 26px;
+                        padding: 24px 0px;
+                    }
+                    .numbers-wrapper-text-btn {
+                        width: 100%;
+                        .numbers-wrapper-text-btn-row {
+                            justify-content: center;
+                        }
+                    }
                 }
             }
         }
