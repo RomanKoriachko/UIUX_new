@@ -564,6 +564,10 @@ body {
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: 30%;
+                background-color: transparent;
+                &:active {
+                    background-color: #ffffff63;
+                }
             }
             .slick-prev {
                 left: 50px;

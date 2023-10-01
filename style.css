@@ -688,6 +688,11 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 30%;
+  background-color: transparent;
+}
+.main .example-section .example-section-slider .slick-prev:active,
+.main .example-section .example-section-slider .slick-next:active {
+  background-color: rgba(255, 255, 255, 0.3882352941);
 }
 .main .example-section .example-section-slider .slick-prev {
   left: 50px;
