@@ -335,6 +335,7 @@ body {
                 font-weight: 600;
                 line-height: 42px;
                 letter-spacing: -0.04em;
+                transition: 0.2s all;
                 .aspect-wrapper-item-circle {
                     width: 40px;
                     height: 40px;
@@ -358,6 +359,13 @@ body {
                 }
                 span {
                     color: #4ebd09;
+                }
+                &:hover {
+                    background-color: #121617;
+                    color: white;
+                }
+                &:hover .aspect-wrapper-item-circle-arrow {
+                    background-image: url(images/arrow-up-white.svg);
                 }
             }
             .aspect-wrapper-item-btn {
@@ -406,13 +414,13 @@ body {
                 letter-spacing: 0.15em;
                 color: #4ebd09;
             }
-            .plan-wrapper-item-tex-bold {
+            .plan-wrapper-item-text-bold {
                 font-size: 20px;
                 font-weight: 600;
                 line-height: 32px;
                 letter-spacing: 0em;
             }
-            .plan-wrapper-item-tex-regular {
+            .plan-wrapper-item-text-regular {
                 font-size: 20px;
                 font-weight: 400;
                 line-height: 32px;
@@ -472,6 +480,7 @@ body {
                 background-color: white;
                 color: #121617;
                 padding: 35px 30px 30px 30px;
+                transition: 0.2s all;
                 .benefit-wrapper-item-circle-wrapper {
                     width: max-content;
                     position: relative;
@@ -506,6 +515,15 @@ body {
                     line-height: 26px;
                     letter-spacing: -0.04em;
                     width: 65%;
+                }
+                &:hover {
+                    background-color: #121617;
+                    color: white;
+                    .benefit-wrapper-item-circle-wrapper {
+                        .benefit-wrapper-item-plus {
+                            background-image: url(images/plus-white.svg);
+                        }
+                    }
                 }
             }
         }
@@ -1121,16 +1139,16 @@ body {
         }
         .aspect-section {
             .aspect-wrapper {
-                .aspect-wrapper-item {
-                    transition: 0.2s all;
-                    &:hover {
-                        background-color: #121617;
-                        color: white;
-                    }
-                    &:hover .aspect-wrapper-item-circle-arrow {
-                        background-image: url(images/arrow-up-white.svg);
-                    }
-                }
+                // .aspect-wrapper-item {
+                //     transition: 0.2s all;
+                //     &:hover {
+                //         background-color: #121617;
+                //         color: white;
+                //     }
+                //     &:hover .aspect-wrapper-item-circle-arrow {
+                //         background-image: url(images/arrow-up-white.svg);
+                //     }
+                // }
                 .aspect-wrapper-item-btn {
                     &:hover {
                         border-color: #49be01;
@@ -1170,22 +1188,6 @@ body {
             .animated-btn {
                 &:hover {
                     color: #ffffff;
-                }
-            }
-        }
-        .benefit-section {
-            .benefit-wrapper {
-                .benefit-wrapper-item {
-                    transition: 0.2s all;
-                    &:hover {
-                        background-color: #121617;
-                        color: white;
-                        .benefit-wrapper-item-circle-wrapper {
-                            .benefit-wrapper-item-plus {
-                                background-image: url(images/plus-white.svg);
-                            }
-                        }
-                    }
                 }
             }
         }
@@ -1289,6 +1291,11 @@ body {
                 }
             }
         }
+        .benefit-section {
+            .benefit-title {
+                width: 85%;
+            }
+        }
     }
 }
 
@@ -1349,6 +1356,18 @@ body {
             .aspect-title {
                 font-size: 57px;
                 line-height: 67px;
+            }
+        }
+        .plan-section {
+            .plan-wrapper {
+                width: 100%;
+            }
+        }
+        .benefit-section {
+            .benefit-title {
+                width: 100%;
+                font-size: 64px;
+                line-height: 74px;
             }
         }
     }
@@ -1478,6 +1497,60 @@ body {
                 }
                 .aspect-wrapper-item-btn {
                     font-size: 30px;
+                }
+            }
+        }
+        .plan-section {
+            padding-top: 42px;
+            padding-bottom: 36px;
+            .plan-title {
+                font-size: 32px;
+                line-height: 42px;
+                margin-bottom: 24px;
+            }
+            .plan-wrapper {
+                grid-template-columns: 1fr;
+                gap: 16px;
+                .plan-wrapper-item-step {
+                    font-size: 20px;
+                    line-height: 20px;
+                }
+                .plan-wrapper-item-text-bold,
+                .plan-wrapper-item-text-regular {
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+                .plan-wrapper-item-text-regular {
+                    margin-bottom: 16px;
+                }
+            }
+            .animated-btn {
+                margin-top: 32px;
+            }
+        }
+        .benefit-section {
+            padding-top: 42px;
+            padding-bottom: 32px;
+            .benefit-subtitle {
+                font-size: 16px;
+                line-height: 16px;
+            }
+            .benefit-title {
+                font-size: 36px;
+                line-height: 46px;
+                margin-bottom: 32px;
+            }
+            .benefit-wrapper {
+                grid-template-columns: 1fr;
+                .benefit-wrapper-item {
+                    .benefit-wrapper-item-title {
+                        font-size: 24px;
+                        line-height: 34px;
+                    }
+                    .benefit-wrapper-item-subtitle {
+                        font-size: 16px;
+                        line-height: 26px;
+                    }
                 }
             }
         }
