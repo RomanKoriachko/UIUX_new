@@ -1380,6 +1380,19 @@ body {
                 width: 100%;
             }
         }
+        .review-section {
+            .review-title {
+                width: 80%;
+            }
+            .review-slider {
+                .slick-prev {
+                    right: 90px;
+                }
+                .slick-next {
+                    right: 20px;
+                }
+            }
+        }
     }
 }
 
@@ -1649,6 +1662,29 @@ body {
                     margin-top: 32px;
                     width: 100%;
                     max-width: 100%;
+                }
+            }
+        }
+        .review-section {
+            padding-top: 42px;
+            padding-bottom: 18px;
+            .review-title {
+                font-size: 32px;
+                line-height: 42px;
+                width: 75%;
+            }
+            .review-slider {
+                .slick-next,
+                .slick-prev {
+                    width: 44px;
+                    height: 44px;
+                    top: 65px;
+                }
+                .slick-prev {
+                    right: 60px;
+                }
+                .slick-next {
+                    right: 10px;
                 }
             }
         }

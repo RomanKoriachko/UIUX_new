@@ -1414,6 +1414,15 @@ body {
   .main .form-section .form {
     width: 100%;
   }
+  .main .review-section .review-title {
+    width: 80%;
+  }
+  .main .review-section .review-slider .slick-prev {
+    right: 90px;
+  }
+  .main .review-section .review-slider .slick-next {
+    right: 20px;
+  }
 }
 @media (max-width: 576px) {
   .container {
@@ -1657,5 +1666,26 @@ body {
     margin-top: 32px;
     width: 100%;
     max-width: 100%;
+  }
+  .main .review-section {
+    padding-top: 42px;
+    padding-bottom: 18px;
+  }
+  .main .review-section .review-title {
+    font-size: 32px;
+    line-height: 42px;
+    width: 75%;
+  }
+  .main .review-section .review-slider .slick-next,
+  .main .review-section .review-slider .slick-prev {
+    width: 44px;
+    height: 44px;
+    top: 65px;
+  }
+  .main .review-section .review-slider .slick-prev {
+    right: 60px;
+  }
+  .main .review-section .review-slider .slick-next {
+    right: 10px;
   }
 }
