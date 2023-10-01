@@ -1,3 +1,46 @@
+// ---- Burger menu -----
+
+let burgerMenuBtn = document.querySelector(".logo-btn");
+let burgerMenu = document.querySelector(".burger-menu");
+let header = document.querySelector(".header");
+let burgerBg = document.querySelector(".burger-menu-bg");
+let main = document.querySelector(".main");
+let footer = document.querySelector(".footer");
+let burgerMenuBg = document.querySelector(".burger-menu-bg");
+
+function openBurgerManu() {
+    burgerMenu.classList.add("opened-burger-menu");
+    burgerMenu.classList.remove("closed-burger-menu");
+    header.classList.add("white-bg");
+    document.body.classList.add("disable-scroll");
+    burgerBg.classList.add("blur");
+    main.classList.add("blur");
+    footer.classList.add("blur");
+}
+function closeBurgerMenu() {
+    burgerMenu.classList.add("closed-burger-menu");
+    burgerMenu.classList.remove("opened-burger-menu");
+    header.classList.remove("white-bg");
+    document.body.classList.remove("disable-scroll");
+    burgerBg.classList.remove("blur");
+    main.classList.remove("blur");
+    footer.classList.remove("blur");
+}
+
+burgerMenuBtn.addEventListener("click", () => {
+    {
+        if (burgerMenu.className.includes("closed-burger-menu")) {
+            openBurgerManu();
+        } else {
+            closeBurgerMenu();
+        }
+    }
+});
+
+burgerMenuBg.addEventListener("click", () => {
+    closeBurgerMenu();
+});
+
 // ---- Sliders -----
 
 $(document).ready(function () {
@@ -76,37 +119,49 @@ $(document).ready(function () {
 
 // ----- Navigation ------
 
-let aboutCourseBtn = document.querySelector(".header-menu-item-1");
-let aboutUsBtn = document.querySelector(".header-menu-item-2");
-let contactsBtn = document.querySelector(".header-menu-item-3");
+let aboutCourseBtn = document.querySelectorAll(".header-menu-item-1");
+let aboutUsBtn = document.querySelectorAll(".header-menu-item-2");
+let contactsBtn = document.querySelectorAll(".header-menu-item-3");
 let registrationBtns = document.querySelectorAll(".registration-btn");
 
 let aspectSection = document.querySelector(".aspect-section");
 let numbersSection = document.querySelector(".numbers-section");
-let footer = document.querySelector(".footer");
 let formSection = document.querySelector(".form-section");
 
-aboutCourseBtn.addEventListener("click", function () {
-    window.scrollTo({
-        top: aspectSection.getBoundingClientRect().top + window.pageYOffset,
-        behavior: "smooth",
+for (let i = 0; i < aboutCourseBtn.length; i++) {
+    aboutCourseBtn[i].addEventListener("click", function () {
+        closeBurgerMenu();
+        window.scrollTo({
+            top: aspectSection.getBoundingClientRect().top + window.pageYOffset,
+            behavior: "smooth",
+        });
     });
-});
-aboutUsBtn.addEventListener("click", function () {
-    window.scrollTo({
-        top: numbersSection.getBoundingClientRect().top + window.pageYOffset,
-        behavior: "smooth",
+}
+
+for (let i = 0; i < aboutUsBtn.length; i++) {
+    aboutUsBtn[i].addEventListener("click", function () {
+        closeBurgerMenu();
+        window.scrollTo({
+            top:
+                numbersSection.getBoundingClientRect().top + window.pageYOffset,
+            behavior: "smooth",
+        });
     });
-});
-contactsBtn.addEventListener("click", function () {
-    window.scrollTo({
-        top: footer.getBoundingClientRect().top + window.pageYOffset,
-        behavior: "smooth",
+}
+
+for (let i = 0; i < contactsBtn.length; i++) {
+    contactsBtn[i].addEventListener("click", function () {
+        closeBurgerMenu();
+        window.scrollTo({
+            top: footer.getBoundingClientRect().top + window.pageYOffset,
+            behavior: "smooth",
+        });
     });
-});
+}
 
 for (let i = 0; i < registrationBtns.length; i++) {
     registrationBtns[i].addEventListener("click", function () {
+        closeBurgerMenu();
         window.scrollTo({
             top: formSection.getBoundingClientRect().top + window.pageYOffset,
             behavior: "smooth",
@@ -152,29 +207,3 @@ $(function () {
             $(this).find("span").css({ top: relY, left: relX });
         });
 });
-
-// ---- disable hover on mobile -----
-function hasTouch() {
-    return (
-        "ontouchstart" in document.documentElement ||
-        navigator.maxTouchPoints > 0 ||
-        navigator.msMaxTouchPoints > 0
-    );
-}
-
-if (hasTouch()) {
-    try {
-        for (var si in document.styleSheets) {
-            var styleSheet = document.styleSheets[si];
-            if (!styleSheet.rules) continue;
-
-            for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
-                if (!styleSheet.rules[ri].selectorText) continue;
-
-                if (styleSheet.rules[ri].selectorText.match(":hover")) {
-                    styleSheet.deleteRule(ri);
-                }
-            }
-        }
-    } catch (ex) {}
-}

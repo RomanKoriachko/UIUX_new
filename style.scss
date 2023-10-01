@@ -21,6 +21,10 @@ body {
     padding: 0 82px;
 }
 
+.disable-scroll {
+    overflow: hidden;
+}
+
 @keyframes colorChange {
     from {
         background-color: #fa2702;
@@ -93,6 +97,8 @@ body {
 .header {
     background-color: #121617;
     color: #989898;
+    position: relative;
+    transition: 0.3s all;
     .header-row {
         border-bottom: 2px solid #4ebd09;
         padding: 25px 36px;
@@ -113,6 +119,58 @@ body {
     .animated-btn {
         @include animatedButton(176px, 48px, 16px);
     }
+    .burger-menu {
+        position: absolute;
+        z-index: 900;
+        top: 120px;
+        left: 0px;
+        width: 100%;
+        color: #0d1a30;
+        background-color: white;
+        padding: 24px 0px 54px;
+        text-align: center;
+        transition: 0.3s all;
+        filter: blur(0px);
+        .burger-menu-item {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 30px;
+            letter-spacing: 0em;
+            margin-bottom: 32px;
+        }
+        .button-wrapper {
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+        }
+    }
+}
+.burger-menu-bg {
+    position: absolute;
+    top: 150px;
+    left: -10px;
+    height: 100vh;
+    width: 100vh;
+    visibility: hidden;
+    opacity: 0;
+    background-color: #000000b2;
+    z-index: -1;
+}
+.blur {
+    filter: blur(3px);
+    opacity: 1;
+    visibility: visible;
+}
+.opened-burger-menu {
+    visibility: visible;
+    opacity: 1;
+}
+.closed-burger-menu {
+    visibility: hidden;
+    opacity: 0;
+}
+.white-bg {
+    background-color: white;
 }
 
 .main {
@@ -1163,17 +1221,6 @@ body {
                 }
             }
         }
-        .example-section {
-            .example-section-slider {
-                .slick-prev,
-                .slick-next {
-                    transition: 0.2s all;
-                    &:hover {
-                        background-color: #ffffff63;
-                    }
-                }
-            }
-        }
         .numbers-section {
             .numbers-wrapper {
                 .numbers-wrapper-text {
@@ -1293,13 +1340,24 @@ body {
 
 @media (max-width: 992px) {
     .header {
-        .header-menu {
-            display: none;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        padding-bottom: 10px;
+        .header-row {
+            justify-content: center;
+            .header-menu {
+                display: none;
+            }
+            .animated-btn {
+                display: none;
+            }
         }
     }
 
     .main {
         .intro-section {
+            padding-top: 130px;
             .intro-title {
                 font-size: 64px;
                 line-height: 84px;
@@ -1415,14 +1473,13 @@ body {
 
     .header {
         .header-row {
-            justify-content: center;
             margin: 0px 20px;
             img {
                 height: 44px;
             }
         }
-        .animated-btn {
-            display: none;
+        .burger-menu {
+            top: 104px;
         }
     }
 
@@ -1436,7 +1493,7 @@ body {
         }
 
         .intro-section {
-            padding-top: 10px;
+            padding-top: 110px;
             padding-bottom: 40px;
             overflow: hidden;
             .intro-subtitle {
