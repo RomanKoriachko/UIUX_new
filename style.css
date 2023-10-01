@@ -667,11 +667,11 @@ body {
   color: #4ebd09;
 }
 .main .example-section .example-section-slider .slider-item {
-  max-width: 1440px;
   margin: 0px 30px;
+  width: 1440px;
 }
 .main .example-section .example-section-slider .slider-item .example-slider-img-wrapper {
-  width: 100%;
+  max-width: 1440px;
 }
 .main .example-section .example-section-slider .slider-item .example-slider-img-wrapper > img {
   width: 100%;
@@ -1378,6 +1378,9 @@ body {
     font-size: 64px;
     line-height: 74px;
   }
+  .main .benefit-section .benefit-wrapper {
+    grid-template-columns: 1fr;
+  }
 }
 @media (max-width: 576px) {
   .container {
@@ -1488,6 +1491,9 @@ body {
     margin-top: 8px;
     margin-bottom: 24px;
   }
+  .main .aspect-section .aspect-wrapper {
+    grid-template-rows: repeat(6, 220px);
+  }
   .main .aspect-section .aspect-wrapper .aspect-wrapper-item {
     font-size: 20px;
     line-height: 32px;
@@ -1536,9 +1542,6 @@ body {
     line-height: 46px;
     margin-bottom: 32px;
   }
-  .main .benefit-section .benefit-wrapper {
-    grid-template-columns: 1fr;
-  }
   .main .benefit-section .benefit-wrapper .benefit-wrapper-item .benefit-wrapper-item-title {
     font-size: 24px;
     line-height: 34px;
@@ -1546,5 +1549,29 @@ body {
   .main .benefit-section .benefit-wrapper .benefit-wrapper-item .benefit-wrapper-item-subtitle {
     font-size: 16px;
     line-height: 26px;
+  }
+  .main .example-section .example-title {
+    font-size: 32px;
+    line-height: 42px;
+    padding-bottom: 23px;
+  }
+  .main .example-section .example-section-slider .slider-item {
+    margin: 0px;
+    max-height: 250px;
+    width: auto;
+  }
+  .main .example-section .example-section-slider .slider-item .example-slider-img-wrapper {
+    display: block;
+    height: 250px;
+  }
+  .main .example-section .example-section-slider .slider-item .example-slider-img-wrapper > img {
+    height: 100%;
+    width: auto;
+  }
+  .main .example-section .example-section-slider .slick-prev {
+    left: 25px;
+  }
+  .main .example-section .example-section-slider .slick-next {
+    right: 25px;
   }
 }

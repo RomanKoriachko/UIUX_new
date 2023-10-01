@@ -11,8 +11,14 @@ $(document).ready(function () {
             {
                 breakpoint: 1440,
                 settings: {
+                    variableWidth: false,
+                },
+            },
+            {
+                breakpoint: 576,
+                settings: {
                     // centerMode: false,
-                    // variableWidth: false,
+                    variableWidth: true,
                 },
             },
         ],
