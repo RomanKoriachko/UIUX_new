@@ -132,18 +132,25 @@ for (let i = 0; i < aboutCourseBtn.length; i++) {
     aboutCourseBtn[i].addEventListener("click", function () {
         closeBurgerMenu();
         window.scrollTo({
-            top: aspectSection.getBoundingClientRect().top + window.pageYOffset,
+            top:
+                aspectSection.getBoundingClientRect().top +
+                window.pageYOffset -
+                header.offsetHeight,
             behavior: "smooth",
         });
     });
 }
+
+console.log(header.offsetHeight);
 
 for (let i = 0; i < aboutUsBtn.length; i++) {
     aboutUsBtn[i].addEventListener("click", function () {
         closeBurgerMenu();
         window.scrollTo({
             top:
-                numbersSection.getBoundingClientRect().top + window.pageYOffset,
+                numbersSection.getBoundingClientRect().top +
+                window.pageYOffset -
+                header.offsetHeight,
             behavior: "smooth",
         });
     });
@@ -153,7 +160,10 @@ for (let i = 0; i < contactsBtn.length; i++) {
     contactsBtn[i].addEventListener("click", function () {
         closeBurgerMenu();
         window.scrollTo({
-            top: footer.getBoundingClientRect().top + window.pageYOffset,
+            top:
+                footer.getBoundingClientRect().top +
+                window.pageYOffset -
+                header.offsetHeight,
             behavior: "smooth",
         });
     });
@@ -163,7 +173,10 @@ for (let i = 0; i < registrationBtns.length; i++) {
     registrationBtns[i].addEventListener("click", function () {
         closeBurgerMenu();
         window.scrollTo({
-            top: formSection.getBoundingClientRect().top + window.pageYOffset,
+            top:
+                formSection.getBoundingClientRect().top +
+                window.pageYOffset -
+                header.offsetHeight,
             behavior: "smooth",
         });
     });
