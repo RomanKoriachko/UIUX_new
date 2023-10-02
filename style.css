@@ -72,7 +72,7 @@ body {
 
 @keyframes colorChange {
   from {
-    background-color: #fa2702;
+    background-color: #e7462a;
   }
   to {
     background-color: #4ebd09;
@@ -220,7 +220,7 @@ body {
   width: 102px;
   height: 102px;
   border-radius: 50px;
-  background-color: #fa2702;
+  background-color: #e7462a;
   background-image: url(images/scroll-up-btn.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -258,7 +258,7 @@ body {
   padding: 24px 0px;
 }
 .main .intro-section .intro-title > span {
-  color: #fa2702;
+  color: #e7462a;
 }
 .main .intro-section .intro-text {
   font-size: 24px;
@@ -284,7 +284,7 @@ body {
   font-weight: 900;
   line-height: 30px;
   letter-spacing: 0.15em;
-  color: #fa2702;
+  color: #e7462a;
   text-transform: uppercase;
 }
 .main .intro-section .intro-content-row .intro-content-item > span {
@@ -404,7 +404,7 @@ body {
   margin-bottom: 60px;
 }
 .main .suitable-section .suitable-title > span {
-  color: #fa2702;
+  color: #e7462a;
 }
 .main .suitable-section .suitable-wrapper {
   width: 70%;
@@ -447,7 +447,7 @@ body {
   margin: 20px 0px 70px 0px;
 }
 .main .aspect-section .aspect-title > span {
-  color: #fa2702;
+  color: #e7462a;
 }
 .main .aspect-section .aspect-wrapper {
   display: grid;
@@ -470,7 +470,7 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50px;
-  background-color: #fa2702;
+  background-color: #e7462a;
   margin-bottom: 10px;
   background-size: 60%;
   position: relative;
@@ -525,7 +525,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fa2702;
+  background-color: #e7462a;
   color: white;
 }
 .main .aspect-section .aspect-wrapper .aspect-wrapper-item-btn span {
@@ -568,7 +568,7 @@ body {
   color: #4ebd09;
 }
 .main .plan-section .plan-title .color-red {
-  color: #fa2702;
+  color: #e7462a;
 }
 .main .plan-section .plan-wrapper {
   text-align: left;
@@ -670,7 +670,7 @@ body {
   width: 70%;
 }
 .main .benefit-section .benefit-title > span {
-  color: #fa2702;
+  color: #e7462a;
 }
 .main .benefit-section .benefit-wrapper {
   display: grid;
@@ -694,7 +694,7 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50px;
-  background-color: #fa2702;
+  background-color: #e7462a;
 }
 .main .benefit-section .benefit-wrapper .benefit-wrapper-item .benefit-wrapper-item-circle-wrapper .benefit-wrapper-item-plus {
   position: absolute;
@@ -800,7 +800,7 @@ body {
   color: #4ebd09;
 }
 .main .numbers-section .numbers-wrapper .numbers-wrapper-text .numbers-wrapper-text-title .color-red {
-  color: #fa2702;
+  color: #e7462a;
 }
 .main .numbers-section .numbers-wrapper .numbers-wrapper-text .numbers-wrapper-text-subtitle {
   font-size: 20px;
@@ -829,7 +829,7 @@ body {
 .main .numbers-section .numbers-wrapper .numbers-wrapper-text .numbers-wrapper-text-btn .numbers-wrapper-text-btn-row .red-circle {
   width: 20px;
   height: 20px;
-  background-color: #fa2702;
+  background-color: #e7462a;
   border-radius: 50px;
 }
 .main .numbers-section .numbers-wrapper .numbers-wrapper-indicators .numbers-wrapper-indicators-item {
@@ -858,7 +858,7 @@ body {
 .main .numbers-section .numbers-wrapper .numbers-wrapper-indicators .numbers-wrapper-indicators-item .numbers-wrapper-indicators-item-circle {
   min-width: 40px;
   min-height: 40px;
-  background-color: #fa2702;
+  background-color: #e7462a;
   border-radius: 50px;
   border: none;
   background-image: url(images/arrow-up-white.svg);
@@ -884,7 +884,7 @@ body {
   color: #4ebd09;
 }
 .main .companies-section .companies-title .color-red {
-  color: #fa2702;
+  color: #e7462a;
 }
 .main .companies-section .companies-slider .slider-item {
   width: 180px;
@@ -999,7 +999,7 @@ body {
   margin: 0 auto;
 }
 .main .form-section .form-title > span {
-  color: #fa2702;
+  color: #e7462a;
 }
 .main .form-section .form-subtitle {
   font-size: 20px;
@@ -1218,7 +1218,7 @@ body {
 }
 .main .review-section .review-slider .slick-prev:active {
   background-image: url(images/arrow-left-white.svg);
-  background-color: #fa2702;
+  background-color: #e7462a;
 }
 .main .review-section .review-slider .slick-next {
   right: 85px;
@@ -1226,7 +1226,7 @@ body {
 }
 .main .review-section .review-slider .slick-next:active {
   background-image: url(images/arrow-right-white.svg);
-  background-color: #fa2702;
+  background-color: #e7462a;
 }
 
 .footer {
@@ -1444,7 +1444,7 @@ body {
   }
   .main .intro-section .mobile-button-and-text-wrapper {
     flex-direction: column-reverse;
-    gap: 60px;
+    gap: 32px;
   }
   .main .intro-section .animated-btn-laptop {
     background: linear-gradient(297.99deg, #49be01 -14.48%, #99ff48 110.19%);
@@ -1549,13 +1549,15 @@ body {
     padding: 0 16px;
   }
   .header .header-row {
+    padding-top: 7px;
+    padding-bottom: 7px;
     margin: 0px 20px;
   }
   .header .header-row img {
     height: 44px;
   }
   .header .burger-menu {
-    top: 104px;
+    top: 70px;
   }
   .main .scroll-up-btn {
     width: 60px;
@@ -1565,18 +1567,20 @@ body {
     bottom: 25px;
   }
   .main .intro-section {
-    padding-top: 110px;
+    padding-top: 70px;
     padding-bottom: 0px;
     overflow: hidden;
     text-align: center;
   }
   .main .intro-section .intro-subtitle {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 16px;
   }
   .main .intro-section .intro-title {
     padding-top: 20px;
     padding-bottom: 24px;
+    font-size: 30px;
+    line-height: 30px;
   }
   .main .intro-section .intro-text {
     font-size: 16px;

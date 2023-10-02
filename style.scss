@@ -27,7 +27,7 @@ body {
 
 @keyframes colorChange {
     from {
-        background-color: #fa2702;
+        background-color: #e7462a;
     }
     to {
         background-color: #4ebd09;
@@ -197,7 +197,7 @@ body {
         width: 102px;
         height: 102px;
         border-radius: 50px;
-        background-color: #fa2702;
+        background-color: #e7462a;
         background-image: url(images/scroll-up-btn.svg);
         background-position: center;
         background-repeat: no-repeat;
@@ -234,7 +234,7 @@ body {
             text-transform: uppercase;
             padding: 24px 0px;
             > span {
-                color: #fa2702;
+                color: #e7462a;
             }
         }
         .intro-text {
@@ -260,7 +260,7 @@ body {
                 font-weight: 900;
                 line-height: 30px;
                 letter-spacing: 0.15em;
-                color: #fa2702;
+                color: #e7462a;
                 text-transform: uppercase;
                 > span {
                     color: #ffffff;
@@ -337,7 +337,7 @@ body {
             width: 60%;
             margin-bottom: 60px;
             > span {
-                color: #fa2702;
+                color: #e7462a;
             }
         }
         .suitable-wrapper {
@@ -380,7 +380,7 @@ body {
             letter-spacing: -0.04em;
             margin: 20px 0px 70px 0px;
             > span {
-                color: #fa2702;
+                color: #e7462a;
             }
         }
         .aspect-wrapper {
@@ -402,7 +402,7 @@ body {
                     width: 40px;
                     height: 40px;
                     border-radius: 50px;
-                    background-color: #fa2702;
+                    background-color: #e7462a;
                     margin-bottom: 10px;
                     background-size: 60%;
                     position: relative;
@@ -438,7 +438,7 @@ body {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background-color: #fa2702;
+                background-color: #e7462a;
                 color: white;
                 // cursor: pointer;
             }
@@ -459,7 +459,7 @@ body {
                 color: #4ebd09;
             }
             .color-red {
-                color: #fa2702;
+                color: #e7462a;
             }
         }
         .plan-wrapper {
@@ -530,7 +530,7 @@ body {
             margin-bottom: 80px;
             width: 70%;
             > span {
-                color: #fa2702;
+                color: #e7462a;
             }
         }
         .benefit-wrapper {
@@ -551,7 +551,7 @@ body {
                         width: 40px;
                         height: 40px;
                         border-radius: 50px;
-                        background-color: #fa2702;
+                        background-color: #e7462a;
                     }
                     .benefit-wrapper-item-plus {
                         position: absolute;
@@ -660,7 +660,7 @@ body {
                         color: #4ebd09;
                     }
                     .color-red {
-                        color: #fa2702;
+                        color: #e7462a;
                     }
                 }
                 .numbers-wrapper-text-subtitle {
@@ -688,7 +688,7 @@ body {
                         .red-circle {
                             width: 20px;
                             height: 20px;
-                            background-color: #fa2702;
+                            background-color: #e7462a;
                             border-radius: 50px;
                         }
                     }
@@ -720,7 +720,7 @@ body {
                     .numbers-wrapper-indicators-item-circle {
                         min-width: 40px;
                         min-height: 40px;
-                        background-color: #fa2702;
+                        background-color: #e7462a;
                         border-radius: 50px;
                         border: none;
                         background-image: url(images/arrow-up-white.svg);
@@ -748,7 +748,7 @@ body {
                 color: #4ebd09;
             }
             .color-red {
-                color: #fa2702;
+                color: #e7462a;
             }
         }
         .companies-slider {
@@ -865,7 +865,7 @@ body {
             width: 68%;
             margin: 0 auto;
             > span {
-                color: #fa2702;
+                color: #e7462a;
             }
         }
         .form-subtitle {
@@ -1054,7 +1054,7 @@ body {
                 background-image: url(images/arrow-left-black.svg);
                 &:active {
                     background-image: url(images/arrow-left-white.svg);
-                    background-color: #fa2702;
+                    background-color: #e7462a;
                 }
             }
             .slick-next {
@@ -1062,7 +1062,7 @@ body {
                 background-image: url(images/arrow-right-black.svg);
                 &:active {
                     background-image: url(images/arrow-right-white.svg);
-                    background-color: #fa2702;
+                    background-color: #e7462a;
                 }
             }
         }
@@ -1381,7 +1381,7 @@ body {
             }
             .mobile-button-and-text-wrapper {
                 flex-direction: column-reverse;
-                gap: 60px;
+                gap: 32px;
             }
             .animated-btn-laptop {
                 background: linear-gradient(
@@ -1533,13 +1533,15 @@ body {
 
     .header {
         .header-row {
+            padding-top: 7px;
+            padding-bottom: 7px;
             margin: 0px 20px;
             img {
                 height: 44px;
             }
         }
         .burger-menu {
-            top: 104px;
+            top: 70px;
         }
     }
 
@@ -1553,17 +1555,19 @@ body {
         }
 
         .intro-section {
-            padding-top: 110px;
+            padding-top: 70px;
             padding-bottom: 0px;
             overflow: hidden;
             text-align: center;
             .intro-subtitle {
-                font-size: 20px;
-                line-height: 30px;
+                font-size: 16px;
+                line-height: 16px;
             }
             .intro-title {
                 padding-top: 20px;
                 padding-bottom: 24px;
+                font-size: 30px;
+                line-height: 30px;
             }
             .intro-text {
                 font-size: 16px;
