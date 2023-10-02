@@ -172,6 +172,14 @@ body {
   justify-content: center;
   padding-top: 50px;
 }
+.header .burger-menu .button-wrapper > button {
+  background: linear-gradient(297.99deg, #49be01 -14.48%, #99ff48 110.19%);
+  color: #ffffff;
+  border: none;
+}
+.header .burger-menu .button-wrapper > button:active {
+  background: linear-gradient(297.99deg, #348600 -14.48%, #5fc50b 110.19%);
+}
 
 .burger-menu-bg {
   position: absolute;
@@ -281,6 +289,10 @@ body {
 }
 .main .intro-section .intro-content-row .intro-content-item > span {
   color: #ffffff;
+}
+.main .intro-section .mobile-button-and-text-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 .main .intro-section .animated-btn {
   background-color: transparent;
@@ -1307,8 +1319,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
-.footer .footer-btns-row .footer-btn-twitter {
-  background-image: url(images/twitter-icon.svg);
+.footer .footer-btns-row .footer-btn-telegram {
+  background-image: url(images/telegram-icon.svg);
 }
 .footer .footer-btns-row .footer-btn-youtube {
   background-image: url(images/youtube-icon.svg);
@@ -1430,6 +1442,17 @@ body {
   .main .intro-section .btn-laptop-wrapper {
     margin-top: 24px;
   }
+  .main .intro-section .mobile-button-and-text-wrapper {
+    flex-direction: column-reverse;
+    gap: 60px;
+  }
+  .main .intro-section .animated-btn-laptop {
+    background: linear-gradient(297.99deg, #49be01 -14.48%, #99ff48 110.19%);
+    color: #121617;
+  }
+  .main .intro-section .animated-btn-laptop:active {
+    background: linear-gradient(297.99deg, #348600 -14.48%, #5fc50b 110.19%);
+  }
   .main .about-section .about-title {
     font-size: 62px;
   }
@@ -1463,6 +1486,14 @@ body {
   .main .plan-section .plan-wrapper {
     width: 100%;
   }
+  .main .plan-section .animated-btn {
+    background: linear-gradient(297.99deg, #49be01 -14.48%, #99ff48 110.19%);
+    color: #ffffff;
+    border: none;
+  }
+  .main .plan-section .animated-btn:active {
+    background: linear-gradient(297.99deg, #348600 -14.48%, #5fc50b 110.19%);
+  }
   .main .benefit-section .benefit-title {
     width: 100%;
     font-size: 64px;
@@ -1483,6 +1514,9 @@ body {
     font-size: 64px;
     line-height: 74px;
   }
+  .main .numbers-section .numbers-wrapper .numbers-wrapper-text .numbers-wrapper-text-btn:active .red-circle {
+    background-color: #49be01;
+  }
   .main .form-section .form-title {
     width: 100%;
     text-align: center;
@@ -1491,6 +1525,14 @@ body {
   }
   .main .form-section .form {
     width: 100%;
+  }
+  .main .form-section .form .animated-btn {
+    background: linear-gradient(297.99deg, #49be01 -14.48%, #99ff48 110.19%);
+    color: #ffffff;
+    border: none;
+  }
+  .main .form-section .form .animated-btn:active {
+    background: linear-gradient(297.99deg, #348600 -14.48%, #5fc50b 110.19%);
   }
   .main .review-section .review-title {
     width: 80%;
@@ -1524,8 +1566,9 @@ body {
   }
   .main .intro-section {
     padding-top: 110px;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
     overflow: hidden;
+    text-align: center;
   }
   .main .intro-section .intro-subtitle {
     font-size: 20px;
@@ -1538,7 +1581,7 @@ body {
   .main .intro-section .intro-text {
     font-size: 16px;
     line-height: 28px;
-    margin-bottom: 16px;
+    margin-bottom: 0px;
   }
   .main .intro-section .intro-section-img {
     height: 240px;

@@ -142,6 +142,22 @@ body {
             display: flex;
             justify-content: center;
             padding-top: 50px;
+            > button {
+                background: linear-gradient(
+                    297.99deg,
+                    #49be01 -14.48%,
+                    #99ff48 110.19%
+                );
+                color: #ffffff;
+                border: none;
+                &:active {
+                    background: linear-gradient(
+                        297.99deg,
+                        #348600 -14.48%,
+                        #5fc50b 110.19%
+                    );
+                }
+            }
         }
     }
 }
@@ -239,22 +255,6 @@ body {
             margin-top: 40px;
             align-items: center;
             justify-content: space-between;
-            // .intro-btn {
-            //     border-radius: 50px;
-            //     border: none;
-            //     background-image: linear-gradient(
-            //         297.99deg,
-            //         #49be01 -14.48%,
-            //         #99ff48 110.19%
-            //     );
-            //     color: #121617;
-            //     font-size: 24px;
-            //     font-weight: 700;
-            //     line-height: 36px;
-            //     letter-spacing: 0em;
-            //     padding: 22px 27px;
-            //     cursor: pointer;
-            // }
             .intro-content-item {
                 font-size: 20px;
                 font-weight: 900;
@@ -266,6 +266,10 @@ body {
                     color: #ffffff;
                 }
             }
+        }
+        .mobile-button-and-text-wrapper {
+            display: flex;
+            flex-direction: column;
         }
         .animated-btn {
             @include animatedButton(267px, 80px, 24px);
@@ -1147,8 +1151,8 @@ body {
             background-position: center;
             background-repeat: no-repeat;
         }
-        .footer-btn-twitter {
-            background-image: url(images/twitter-icon.svg);
+        .footer-btn-telegram {
+            background-image: url(images/telegram-icon.svg);
         }
         .footer-btn-youtube {
             background-image: url(images/youtube-icon.svg);
@@ -1375,6 +1379,25 @@ body {
             .btn-laptop-wrapper {
                 margin-top: 24px;
             }
+            .mobile-button-and-text-wrapper {
+                flex-direction: column-reverse;
+                gap: 60px;
+            }
+            .animated-btn-laptop {
+                background: linear-gradient(
+                    297.99deg,
+                    #49be01 -14.48%,
+                    #99ff48 110.19%
+                );
+                color: #121617;
+                &:active {
+                    background: linear-gradient(
+                        297.99deg,
+                        #348600 -14.48%,
+                        #5fc50b 110.19%
+                    );
+                }
+            }
         }
         .about-section {
             .about-title {
@@ -1412,6 +1435,22 @@ body {
             .plan-wrapper {
                 width: 100%;
             }
+            .animated-btn {
+                background: linear-gradient(
+                    297.99deg,
+                    #49be01 -14.48%,
+                    #99ff48 110.19%
+                );
+                color: #ffffff;
+                border: none;
+                &:active {
+                    background: linear-gradient(
+                        297.99deg,
+                        #348600 -14.48%,
+                        #5fc50b 110.19%
+                    );
+                }
+            }
         }
         .benefit-section {
             .benefit-title {
@@ -1434,6 +1473,11 @@ body {
                         font-size: 64px;
                         line-height: 74px;
                     }
+                    .numbers-wrapper-text-btn {
+                        &:active .red-circle {
+                            background-color: #49be01;
+                        }
+                    }
                 }
             }
         }
@@ -1446,6 +1490,22 @@ body {
             }
             .form {
                 width: 100%;
+                .animated-btn {
+                    background: linear-gradient(
+                        297.99deg,
+                        #49be01 -14.48%,
+                        #99ff48 110.19%
+                    );
+                    color: #ffffff;
+                    border: none;
+                    &:active {
+                        background: linear-gradient(
+                            297.99deg,
+                            #348600 -14.48%,
+                            #5fc50b 110.19%
+                        );
+                    }
+                }
             }
         }
         .review-section {
@@ -1494,8 +1554,9 @@ body {
 
         .intro-section {
             padding-top: 110px;
-            padding-bottom: 40px;
+            padding-bottom: 0px;
             overflow: hidden;
+            text-align: center;
             .intro-subtitle {
                 font-size: 20px;
                 line-height: 30px;
@@ -1507,7 +1568,7 @@ body {
             .intro-text {
                 font-size: 16px;
                 line-height: 28px;
-                margin-bottom: 16px;
+                margin-bottom: 0px;
             }
             .intro-section-img {
                 height: 240px;
