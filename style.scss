@@ -1167,7 +1167,7 @@ body {
 
 @media (hover: hover) {
     .header {
-        .heaader-menu {
+        .header-menu {
             .header-menu-item {
                 transition: 0.2s all;
                 &:hover {
@@ -1175,12 +1175,6 @@ body {
                 }
             }
         }
-        // .registration-btn {
-        //     transition: 0.2s all;
-        //     &:hover {
-        //         background-color: #4ebd0938;
-        //     }
-        // }
     }
 
     .main {

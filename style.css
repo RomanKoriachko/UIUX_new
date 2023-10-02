@@ -1330,10 +1330,10 @@ body {
 }
 
 @media (hover: hover) {
-  .header .heaader-menu .header-menu-item {
+  .header .header-menu .header-menu-item {
     transition: 0.2s all;
   }
-  .header .heaader-menu .header-menu-item:hover {
+  .header .header-menu .header-menu-item:hover {
     color: #ffffff;
   }
   .main .intro-section .intro-section-img > img {
