@@ -1476,6 +1476,10 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
   }
+  .main .aspect-section .aspect-wrapper .aspect-wrapper-item-btn {
+    background-color: #4ebd09;
+    color: #121617;
+  }
   .main .aspect-section .aspect-title {
     font-size: 57px;
     line-height: 67px;

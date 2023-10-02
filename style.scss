@@ -1418,6 +1418,10 @@ body {
             .aspect-wrapper {
                 grid-template-columns: 1fr;
                 grid-template-rows: repeat(6, 1fr);
+                .aspect-wrapper-item-btn {
+                    background-color: #4ebd09;
+                    color: #121617;
+                }
             }
             .aspect-title {
                 font-size: 57px;
