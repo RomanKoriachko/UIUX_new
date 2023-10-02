@@ -141,8 +141,6 @@ for (let i = 0; i < aboutCourseBtn.length; i++) {
     });
 }
 
-console.log(header.offsetHeight);
-
 for (let i = 0; i < aboutUsBtn.length; i++) {
     aboutUsBtn[i].addEventListener("click", function () {
         closeBurgerMenu();
